@@ -37,9 +37,6 @@ const Footer = () => {
           <div className="space-y-3 text-gray-300 ">
            <a href="/" className=" relative block text-[20px] items-center rounded-3xl text-red-600 font-bold">
             📞(+84) 87.6789.252
-            </a> 
-            <a href="/" className="block">
-              (+84) 87.6789.252
             </a>
             <a href="/" className="block">
               baolongscrap@gmail.com
