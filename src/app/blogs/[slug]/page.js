@@ -130,7 +130,7 @@ export default function BlogPage({ params }) {
             open
           >
             <summary className="text-lg font-semibold capitalize cursor-pointer">
-              Table Of Content
+              Mục Lục
             </summary>
             <ul className="mt-4 font-in text-base">
               {blog.toc.map((heading) => {
