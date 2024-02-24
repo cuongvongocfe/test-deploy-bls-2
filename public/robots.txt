@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://baolongscrap.vn
+
+# Sitemaps
+Sitemap: https://baolongscrap.vn/sitemap.xml
