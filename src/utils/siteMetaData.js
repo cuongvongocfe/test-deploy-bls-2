@@ -3,10 +3,10 @@ const siteMetadata = {
     title: 'Bảo Long Scrap | Xử Lý Chất Thải Y Tế - Nguy Hại',
     author: 'Bảo Long Scrap',
     headerTitle: 'Next.js Blog',
-    description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+    description: 'Một blog được tạo bằng Next.js, Tailwind.css và contentlayer.',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
+    siteUrl: 'baolongscrap.vn', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'baolongscrap.vn', 
