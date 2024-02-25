@@ -12,7 +12,7 @@ module.exports = {
         dark: "#1b1b1b",
         light: "#fff",
         accent: "#7B00D3",
-        accentDark: "#ffdb4d",
+        accentDark: "#FFC107",
         gray: "#747474",
       },
       fontFamily:{
