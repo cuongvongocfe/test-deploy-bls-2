@@ -22,7 +22,8 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title,
+    default: siteMetadata.title, // a default is required when creating a template
+  },
   description: siteMetadata.description,
   openGraph: {
     title: siteMetadata.title,
