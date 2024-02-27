@@ -19,7 +19,6 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-,
   description: siteMetadata.description,
   openGraph: {
     title: siteMetadata.title,
