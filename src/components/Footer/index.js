@@ -4,7 +4,8 @@ import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetaData";
-
+import iso from "../../../public/blogs/iso.png";
+import Image from "next/image";
 const Footer = () => {
   const {
     register,
@@ -15,9 +16,7 @@ const Footer = () => {
   console.log(errors);
 
   return (
-    
-    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-
+    <footer className="flex justify-between mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
         UY TÍN TẠO NIỀM TIN
       </h3>
@@ -28,15 +27,18 @@ const Footer = () => {
         lại cho Quý khách hàng.
       </p>
 
-      <div className="w-full  mt-16 md:mt-24 relative font-medium dark:font-bold border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
+      <div className="w-full mt-16 md:mt-24 relative font-medium dark:font-bold border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         {/* <span className="text-center">
           &copy;2024 Bảo Long Scrap . All rights reserved.
         </span> */}
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Liên Hệ</h3>
           <div className="space-y-3 text-gray-300 ">
-           <a href="/" className=" relative block text-[20px] items-center rounded-3xl text-red-600 font-bold">
-            📞(+84) 87.6789.252
+            <a
+              href="/"
+              className=" relative block text-[20px] items-center rounded-3xl text-red-600 font-bold"
+            >
+              📞(+84) 87.6789.252
             </a>
             <a href="/" className="block">
               baolongscrap@gmail.com
@@ -52,9 +54,10 @@ const Footer = () => {
               A17-36A Đường Số 02, <br /> Khu Nam An Hòa, Phường An Hòa, Thành
               Phố Rạch Giá, Tỉnh Kiên Giang,
             </a>
+            <div></div>
+        
           </div>
         </div>
-
         <div className="flex items-center mt-3 mb-2">
           {/* <a
           href={siteMetadata.linkedin}
@@ -72,7 +75,13 @@ const Footer = () => {
         >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a> */}
+          <div className=" flex justify-end gap-5">
+              <Image className="" src={iso} width="2%" height="2%"></Image>
+              <Image className="" src={iso} width="2%" height="2%"></Image>
+            </div>
         </div>
+
+        {/* add google map */}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRo4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
           width="350"
@@ -81,6 +90,7 @@ const Footer = () => {
           allowfullscreen=""
           loading="lazy"
         ></iframe>
+          
       </div>
       {/* <Link
           href="/sitemap.xml"
@@ -89,10 +99,7 @@ const Footer = () => {
           
           sitemap
         </Link> */}
-      <a className="block text-orange">Copyright © 2023 Bảo Long Scrap.</a>
-      
     </footer>
-    
   );
 };
 
