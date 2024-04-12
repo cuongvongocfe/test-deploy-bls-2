@@ -3,6 +3,7 @@ import partner1 from '../../../public/blogs/biasaigonkiengianglogo.png'
 import partner2 from '../../../public/blogs/sannhilogo.png'
 import partner3 from '../../../public/blogs/ungbuoulogo.png'
 import partner4 from '../../../public/blogs/dakhoalogo.png'
+
 const SkillList = [
   // "next.js",
   // "tailwind css",
@@ -44,6 +45,7 @@ const Skills = () => {
       <Image className='' src={partner3} width="30px" height="30px"></Image>
       <Image className='' src={partner4} width="30px" height="30px"></Image>
       </div>
+      
      
     </section>
   );
