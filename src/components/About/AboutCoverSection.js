@@ -20,11 +20,7 @@ const AboutCoverSection = () => {
         “Môi trường sạch là nền tảng của sự phát triển bền vững”
         </h2>
         <p className="font-medium capitalize mt-4 text-base">
-          Ngày nay, cùng với sự phát triển của kinh tế, xã hội, môi trường sinh
-          thái ngày càng bị ô nhiễm nghiêm trọng. Công tác bảo vệ môi trường
-          cũng ngày càng được doanh nghiệp coi trọng hơn, bởi trước hết doanh
-          nghiệp hiểu rõ trách nhiệm của mình đối với cộng đồng. Bảo vệ môi
-          trường cũng chính là yếu tố sống còn và đặc biệt góp phần quan trọng
+          Bảo vệ môi trường cũng chính là yếu tố sống còn và đặc biệt góp phần quan trọng
           vào quá trình hội nhập và phát triển bền vững của doanh nghiệp. Với sứ
           mệnh đó, CÔNG TY TNHH BẢO LONG SCRAP ra đời để cùng chung tay,
           góp sức cùng cộng đồng bảo vệ môi trường. Với phương châm hợp tác đôi
