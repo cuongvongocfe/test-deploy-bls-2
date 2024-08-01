@@ -1,20 +1,45 @@
-import Link from "next/link";
 import React from "react";
+import Tag from "../Elements/Tag";
+import Link from "next/link";
+import Image from "next/image";
 import { slug } from "github-slugger";
 
-const BlogDetails = ({ blog, slug: blogSlug }) => {
+const BlogLayoutOne = ({ blog }) => {
   return (
-    <div className="px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg">
-      <time className="m-3">
-        
-      </time>
-      <span className="m-3"></span>
-      <div className="m-3">{blog.readingTime.text}</div>
-      <Link href={`/categories/${slug(blog.tags[0])}`} className="m-3">
-        #{blog.tags[0]}
-      </Link>
+    <div className="group inline-block overflow-hidden rounded-xl">
+      <div
+        className="absolute top-0 left-0 bottom-0 right-0 h-full
+            bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-xl z-10
+            "
+      />
+      <Image
+        src={blog.image.filePath.replace("../public", "")}
+        placeholder="blur"
+        blurDataURL={blog.image.blurhashDataUrl}
+        alt={blog.title}
+        width={blog.image.width}
+        height={blog.image.height}
+        className="w-full h-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300"
+        sizes="(max-width: 1180px) 100vw, 50vw"
+      />
+
+      <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
+        <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]}
+        className="px-6 text-xs  sm:text-sm py-1 sm:py-2 !border "
+        />
+        <Link href={blog.url} className="mt-6">
+          <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-light mt-2 sm:mt-4">
+            <span
+              className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] dark:from-accentDark/50 dark:to-accentDark/50
+                group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 "
+            >
+              {blog.title}
+            </span>
+          </h2>
+        </Link>
+      </div>
     </div>
   );
 };
 
-export default BlogDetails;
+export default BlogLayoutOne;
