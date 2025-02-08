@@ -4,9 +4,9 @@ import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetaData";
-import Image from 'next/image';
-import iso27001 from '../../../public/blogs/iso_27001.png'
-import iso140001 from '../../../public/blogs/iso-140001-2015.png'
+import Image from "next/image";
+import iso27001 from "../../../public/blogs/iso_27001.png";
+import iso140001 from "../../../public/blogs/iso-140001-2015.png";
 
 const Footer = () => {
   const {
@@ -18,17 +18,26 @@ const Footer = () => {
   console.log(errors);
 
   return (
-    
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-
       <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
         UY TÍN TẠO NIỀM TIN
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-extrabold text-sm sm:text-base">
-        Không thách thức nào là QUÁ LỚN, không chi tiết nào là QUÁ NHỎ. Nghiêm
-        túc từ cái nhìn về bức tranh tổng thể cho đến sự chỉnh chu ở từng chi
-        tiết tại mỗi bước thực hiện, là giá trị cốt lõi mà Bảo Long Scrap mang
-        lại cho Quý khách hàng.
+        "Act locally, impact globally" – Mọi hành động nhỏ bé tại địa phương đều
+        có thể tạo nên sự thay đổi tích cực to lớn. Mỗi hành động cụ thể, mỗi
+        kilôgam phế liệu được tái chế, mỗi tấn chất thải được xử lý an toàn đều
+        giảm thiểu tác động tiêu cực đến môi trường, hạn chế ô nhiễm, tiết kiệm
+        cũng như tái chế tài nguyên. Chúng ta không cần phải chờ đợi những giải
+        pháp lớn lao từ bên ngoài, mà có thể bắt đầu từ chính những gì trong tầm
+        tay. Ngay cả những hành động nhỏ nhất, khi được thực hiện với sự cam kết
+        và ý thức, đều góp phần bảo vệ môi trường, xây dựng một tương lai bền
+        vững, và lan tỏa thông điệp mạnh mẽ về trách nhiệm với nơi chúng ta
+        sống. "Act locally, impact globally" không chỉ là một khẩu hiệu mà còn
+        phản ánh tinh thần trách nhiệm và tầm nhìn của Bảo Long Scrap trong các
+        hoạt động kinh doanh của mình. Những gì chúng ta làm hôm nay sẽ đóng góp
+        vào bức tranh lớn hơn của nhân loại, nơi sự hợp lực của nhiều cá nhân và
+        tổ chức có thể tạo nên sự thay đổi mang tính toàn cầu. Mỗi bước đi hiện
+        tại đều có thể trở thành nền tảng cho một tương lai tốt đẹp hơn.
       </p>
 
       <div className="w-full  mt-16 md:mt-24 relative font-medium dark:font-bold border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
@@ -38,11 +47,14 @@ const Footer = () => {
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Liên Hệ</h3>
           <div className="space-y-3 text-gray-300 ">
-           <a href="/" className=" relative block text-[20px] items-center rounded-3xl text-red-600 font-bold">
-            📞(+84) 87.6789.252
+            <a
+              href="/"
+              className=" relative block text-[20px] items-center rounded-3xl text-red-600 font-bold"
+            >
+              📞(+84) 87.6789.252
             </a>
             <a href="/" className="block">
-              baolongscrap@gmail.com
+              info@baolongscrap.vn
             </a>
             <a href="/" className="block">
               Mã Số Thuế : 1702260628
@@ -75,7 +87,7 @@ const Footer = () => {
         >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a> */}
-        </div >
+        </div>
         {/* <div className="grid grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5">
 
         <Image className='mb-4' src={iso27001} ></Image>
@@ -89,7 +101,6 @@ const Footer = () => {
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-        
       </div>
 
       {/* iso certified*/}
@@ -101,9 +112,7 @@ const Footer = () => {
           
           sitemap
         </Link> */}
-   
     </footer>
-    
   );
 };
 
