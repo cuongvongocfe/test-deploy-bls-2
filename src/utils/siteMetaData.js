@@ -10,12 +10,13 @@ const siteMetadata = {
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'baolongscrap.vn', 
-    github: 'https://www.tiktok.com/@baolongscrap150822',
+    github: 'https://www.tiktok.com/@baolongscrap.vn',
     twitter: 'https://zaloweb.vn/',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com/baolongscrap',
     linkedin: 'https://www.facebook.com/baolongscrap',
     dribbble: 'https://youtube.com/baolongscrap',
+    tiktok: 'https://www.tiktok.com/@baolongscrap.vn',
     locale: 'en-US',
   }
   
