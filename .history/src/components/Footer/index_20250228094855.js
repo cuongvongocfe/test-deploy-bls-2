@@ -33,32 +33,32 @@ const Footer = () => {
   console.log(errors);
 
   return (
-    <footer className="mt-16 rounded-2xl bg-accentDark/90 dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-dark dark:text-dark">
+    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
         UY TÍN TẠO NIỀM TIN
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-extrabold text-sm sm:text-base">
         "Act locally, impact globally"
       </p>
-      <div className="grid lg:grid-cols-6 mt-7 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
+      <div className="grid lg:grid-cols-6 mt-7 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 relative font-medium dark:font-bold   font-light">
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>
         <Image className="" src={partner5} width="30px" height="30px"></Image>
-        <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner6} width="30px" height="30px"></Image>
+        <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner7} width="30px" height="30px"></Image>
         
       </div>
 
-      <ul className="grid lg:grid-cols- mt-7 sm:grid-cols-2 grid-cols-2 items-center gap-2 lg:px-24 px-4 pt-5 font-medium dark:font-bold ">
+      <ul className="grid lg:grid-cols- mt-7 sm:grid-cols-2 grid-cols-2 items-center gap-2 lg:px-24 px-4 pt-5">
         {SkillList.map((item, index) => {
           return (
             <li
               key={index}
-              className="font-semibold inline-block capitalize text-base xs:text-lg sm:text-xl  md:text-2xl py-2 xs:py-3 sm:py-4 lg:py-5 px-4 xs:px-6 sm:px-8 lg:px-12 border-2 border-solid border-light dark:border-light rounded mr-3 mb-3 xs:mr-4 xs:mb-4  md:mr-6 md:mb-6 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal " 
+              className="font-mono inline-block capitalize text-base xs:text-lg sm:text-xl  md:text-2xl py-2 xs:py-3 sm:py-4 lg:py-5 px-4 xs:px-6 sm:px-8 lg:px-12 border-2 border-solid border-dark bg-neutral-50 dark:border-dark rounded mr-3 mb-3 xs:mr-4 xs:mb-4  md:mr-6 md:mb-6 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal " 
             >
-              {item} 
+              {item}
             </li>
           );
         })}
@@ -96,28 +96,28 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold"></h3>
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark "
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white "
             >
               Tiêu Hủy Giấy Tờ - Hồ Sơ Mật
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Xử Lý Chất Thải Y Tế - Nguy Hại
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Phá Dở Công Trình
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng
             </a>

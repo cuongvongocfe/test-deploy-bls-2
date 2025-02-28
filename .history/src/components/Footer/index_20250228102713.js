@@ -96,28 +96,28 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold"></h3>
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark "
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white "
             >
               Tiêu Hủy Giấy Tờ - Hồ Sơ Mật
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Xử Lý Chất Thải Y Tế - Nguy Hại
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Phá Dở Công Trình
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng
             </a>

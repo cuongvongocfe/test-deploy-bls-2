@@ -25,7 +25,7 @@ const Skills = () => {
     <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light
      text-dark dark:text-light">
       <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
-
+        Đối Tác Của Chúng Tôi
       </span>
       <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
         {SkillList.map((item, index) => {
@@ -39,6 +39,14 @@ const Skills = () => {
           );
         })}
       </ul>
+      <div className='grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5' >
+      <Image className='' src={partner1} width="30px" height="30px"></Image>
+      <Image className='' src={partner2} width="30px" height="30px"></Image>
+      <Image className='' src={partner3} width="30px" height="30px"></Image>
+      <Image className='' src={partner4} width="30px" height="30px"></Image>
+      </div>
+      
+     
     </section>
   );
 };

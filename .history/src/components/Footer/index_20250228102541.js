@@ -33,7 +33,7 @@ const Footer = () => {
   console.log(errors);
 
   return (
-    <footer className="mt-16 rounded-2xl bg-accentDark/90 dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-dark dark:text-dark">
+    <footer className="mt-16 rounded-2xl bg-slate-300 dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
         UY TÍN TẠO NIỀM TIN
       </h3>
@@ -96,28 +96,28 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold"></h3>
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark "
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white "
             >
               Tiêu Hủy Giấy Tờ - Hồ Sơ Mật
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Xử Lý Chất Thải Y Tế - Nguy Hại
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Phá Dở Công Trình
             </a>
 
             <a
               href="/"
-              className=" relative block text-[20px] items-center rounded-3xl font-bold text-dark"
+              className=" relative block text-[20px] items-center rounded-3xl font-bold text-white"
             >
               Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng
             </a>
