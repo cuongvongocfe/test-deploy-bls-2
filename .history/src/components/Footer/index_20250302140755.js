@@ -32,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-16 rounded-2xl bg-accentDark/90 dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-dark dark:text-dark">
-      <h3 className="mt-8 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
+      <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
         "Act locally, impact globally"
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-extrabold text-sm sm:text-base">
@@ -52,9 +52,7 @@ const Footer = () => {
         thể tạo nên sự thay đổi mang tính toàn cầu. Mỗi bước đi hiện tại đều có
         thể trở thành nền tảng cho một tương lai tốt đẹp hơn.
       </p>
-      <div className="grid lg:grid-cols-7 mt-8 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
-
-
+      <div className="grid lg:grid-cols-6 mt-7 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>

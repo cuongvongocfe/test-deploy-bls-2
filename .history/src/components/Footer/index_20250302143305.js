@@ -54,7 +54,15 @@ const Footer = () => {
       </p>
       <div className="grid lg:grid-cols-7 mt-8 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
 
-
+      <div className="w-full bg-accent dark:bg-accentDark text-light dark:text-dark whitespace-nowrap overflow-hidden">
+      <div className="animate-roll  w-full py-2 sm:py-3 flex items-center justify-center capitalize font-semibold tracking-wider text-sm sm:text-base">
+        {insights.map((text) => (
+          <div>
+            {text} <span className="px-4">|</span>{" "}
+          </div>
+        ))}
+      </div>
+    </div>
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>

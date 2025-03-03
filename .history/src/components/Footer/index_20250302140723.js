@@ -15,11 +15,13 @@ import partner5 from "../../../public/blogs/logo-mm-mega-mart-compressed.png";
 import partner6 from "../../../public/blogs/sg-rg.jpg";
 import partner7 from "../../../public/blogs/hoabinhrachgia.png";
 
+
 const SkillList = [
   "TRUNG TÂM Y TẾ CHÂU THÀNH",
   "TRUNG TÂM Y TẾ VĨNH THUẬN",
   "TRUNG TÂM Y TẾ TÂN HIỆP",
   "TRUNG TÂM Y TẾ AN MINH",
+
 ];
 const Footer = () => {
   const {
@@ -32,29 +34,13 @@ const Footer = () => {
 
   return (
     <footer className="mt-16 rounded-2xl bg-accentDark/90 dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-dark dark:text-dark">
-      <h3 className="mt-8 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
-        "Act locally, impact globally"
+      <h3 className="mt-16 font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4 dark:font-extrabold">
+      "Act locally, impact globally"
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-extrabold text-sm sm:text-base">
-        – Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi
-        tích cực to lớn. Mỗi hành động cụ thể, mỗi kilôgam phế liệu được tái
-        chế, mỗi tấn chất thải được xử lý an toàn đều giảm thiểu tác động tiêu
-        cực đến môi trường, hạn chế ô nhiễm, tiết kiệm cũng như tái chế tài
-        nguyên. Chúng ta không cần phải chờ đợi những giải pháp lớn lao từ bên
-        ngoài, mà có thể bắt đầu từ chính những gì trong tầm tay. Ngay cả những
-        hành động nhỏ nhất, khi được thực hiện với sự cam kết và ý thức, đều góp
-        phần bảo vệ môi trường, xây dựng một tương lai bền vững, và lan tỏa
-        thông điệp mạnh mẽ về trách nhiệm với nơi chúng ta sống. "Act locally,
-        impact globally" không chỉ là một khẩu hiệu mà còn phản ánh tinh thần
-        trách nhiệm và tầm nhìn của Bảo Long Scrap trong các hoạt động kinh
-        doanh của mình. Những gì chúng ta làm hôm nay sẽ đóng góp vào bức tranh
-        lớn hơn của nhân loại, nơi sự hợp lực của nhiều cá nhân và tổ chức có
-        thể tạo nên sự thay đổi mang tính toàn cầu. Mỗi bước đi hiện tại đều có
-        thể trở thành nền tảng cho một tương lai tốt đẹp hơn.
+        
       </p>
-      <div className="grid lg:grid-cols-7 mt-8 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
-
-
+      <div className="grid lg:grid-cols-6 mt-7 sm:grid-cols-3 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>
@@ -62,6 +48,7 @@ const Footer = () => {
         <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner6} width="30px" height="30px"></Image>
         <Image className="" src={partner7} width="30px" height="30px"></Image>
+        
       </div>
 
       <ul className="grid lg:grid-cols- mt-7 sm:grid-cols-2 grid-cols-2 items-center gap-2 lg:px-24 px-4 pt-5 font-medium dark:font-bold ">
@@ -69,9 +56,9 @@ const Footer = () => {
           return (
             <li
               key={index}
-              className="font-semibold inline-block capitalize text-base xs:text-lg sm:text-xl  md:text-2xl py-2 xs:py-3 sm:py-4 lg:py-5 px-4 xs:px-6 sm:px-8 lg:px-12 border-2 border-solid border-light dark:border-light rounded mr-3 mb-3 xs:mr-4 xs:mb-4  md:mr-6 md:mb-6 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal "
+              className="font-semibold inline-block capitalize text-base xs:text-lg sm:text-xl  md:text-2xl py-2 xs:py-3 sm:py-4 lg:py-5 px-4 xs:px-6 sm:px-8 lg:px-12 border-2 border-solid border-light dark:border-light rounded mr-3 mb-3 xs:mr-4 xs:mb-4  md:mr-6 md:mb-6 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal " 
             >
-              {item}
+              {item} 
             </li>
           );
         })}
@@ -146,6 +133,7 @@ const Footer = () => {
           loading="lazy"
         ></iframe>
       </div>
+
     </footer>
   );
 };
