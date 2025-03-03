@@ -2,8 +2,8 @@ import InsightRoll from "@/src/components/About/InsightRoll";
 
 
 const insights = [
-    "70+ Hợp đồng",
-    "3+ Years of Freelancin",
+    "30+ Hợp đồng",
+    "2+ Years of Freelancin",
     "99% Sự Hài Lòng Của Khách Hàng"
   ];
 
