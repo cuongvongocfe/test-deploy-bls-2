@@ -14,7 +14,7 @@ import partner4 from "../../../public/blogs/dakhoalogo.png";
 import partner5 from "../../../public/blogs/logo-mm-mega-mart-compressed.png";
 import partner6 from "../../../public/blogs/sg-rg.jpg";
 import partner7 from "../../../public/blogs/hoabinhrachgia.png";
-// import partner8 from "../../../public/blogs/yduoccotruyenkg.png";
+import partner8 from "../../../public/blogs/yduoccotruyenkg.png";
 
 const SkillList = [
   "TRUNG TÂM Y TẾ CHÂU THÀNH",
@@ -59,7 +59,7 @@ const Footer = () => {
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>
-        {/* <Image className="" src={partner8} width="30px" height="30px"></Image> */}
+        <Image className="" src={partner8} width="990px" height="990px"></Image>
         <Image className="" src={partner5} width="30px" height="30px"></Image>
         <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner6} width="30px" height="30px"></Image>

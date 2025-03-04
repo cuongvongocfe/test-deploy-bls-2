@@ -1,6 +1,6 @@
 // please update required information
 const siteMetadata = {
-    title: 'Bảo Long Scrap - Act locally, impact globally',
+    title: 'Bảo Long Scrap | Xử Lý Chất Thải Y Tế - Nguy Hại',
     author: 'Bảo Long Scrap',
     headerTitle: 'Next.js Blog',
     description: 'A blog created with Next.js, Tailwind.css and contentlayer.',

@@ -14,7 +14,7 @@ import partner4 from "../../../public/blogs/dakhoalogo.png";
 import partner5 from "../../../public/blogs/logo-mm-mega-mart-compressed.png";
 import partner6 from "../../../public/blogs/sg-rg.jpg";
 import partner7 from "../../../public/blogs/hoabinhrachgia.png";
-// import partner8 from "../../../public/blogs/yduoccotruyenkg.png";
+import partner8 from "../../../public/blogs/yduoccotruyenkg.png";
 
 const SkillList = [
   "TRUNG TÂM Y TẾ CHÂU THÀNH",
@@ -53,17 +53,17 @@ const Footer = () => {
         thể tạo nên sự thay đổi mang tính toàn cầu. Mỗi bước đi hiện tại đều có
         thể trở thành nền tảng cho một tương lai tốt đẹp hơn.
       </p>
-      <div className="grid lg:grid-cols-8 mt-8 sm:grid-cols-2 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
+      <div className="grid lg:grid-cols-2 mt-8 sm:grid-cols-2 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
 
 
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>
-        {/* <Image className="" src={partner8} width="30px" height="30px"></Image> */}
         <Image className="" src={partner5} width="30px" height="30px"></Image>
         <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner6} width="30px" height="30px"></Image>
         <Image className="" src={partner7} width="30px" height="30px"></Image>
+        <Image className="" src={partner8} width="30px" height="30px"></Image>
       </div>
 
       <ul className="grid lg:grid-cols- mt-7 sm:grid-cols-2 grid-cols-2 items-center gap-2 lg:px-24 px-4 pt-5 font-medium dark:font-bold ">
