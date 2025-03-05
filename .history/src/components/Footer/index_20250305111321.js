@@ -56,10 +56,10 @@ const Footer = () => {
       <div className="grid lg:grid-cols-8 mt-8 sm:grid-cols-2 grid-cols-2 items-center  gap-8 lg:px-24 px-4 pt-5 ">
 
 
+        <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner2} width="30px" height="30px"></Image>
         <Image className="" src={partner4} width="30px" height="30px"></Image>
         <Image className="" src={partner8} width="30px" height="30px"></Image>
-        <Image className="" src={partner3} width="30px" height="30px"></Image>
         <Image className="" src={partner5} width="30px" height="30px"></Image>
         <Image className="" src={partner1} width="30px" height="30px"></Image>
         <Image className="" src={partner6} width="30px" height="30px"></Image>
