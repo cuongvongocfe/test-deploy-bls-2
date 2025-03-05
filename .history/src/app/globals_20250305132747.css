@@ -81,12 +81,3 @@ code {
   }
 
 
-  .gradientBorder {
-    border: 2px solid transparent;
-    background: linear-gradient(to right, #fff, #fff) padding-box,
-                linear-gradient(to right, #f97316, #3b82f6) border-box;
-  }
-  
-  .gradientBorder:hover {
-    transform: scale(1.05);
-  }

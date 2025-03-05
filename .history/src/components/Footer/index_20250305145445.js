@@ -89,17 +89,19 @@ const Footer = () => {
             ))}
           </Slider>
         </div>
+        import styles from '../styles/Footer.module.css';
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7 pt-5 font-medium dark:font-bold">
-          {SkillList.map((item) => (
-            <li 
-              key={item}
-              className="font-semibold text-base xs:text-lg sm:text-xl md:text-2xl py-3 px-6 border-2 border-light rounded hover:scale-105 transition-all duration-200 cursor-pointer dark:font-normal text-center"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+// ... inside Footer component
+<ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7 pt-5 font-medium dark:font-bold">
+  {SkillList.map((item) => (
+    <li
+      key={item}
+      className={`${styles.gradientBorder} font-semibold text-base xs:text-lg sm:text-xl md:text-2xl py-3 px-6 rounded transition-all duration-200 cursor-pointer dark:font-normal text-center`}
+    >
+      {item}
+    </li>
+  ))}
+</ul>
 
         <div className="mt-16 md:mt-24 border-t border-light py-6 flex flex-col md:flex-row justify-between gap-8">
           <div className="space-y-4">

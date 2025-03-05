@@ -73,15 +73,19 @@ const Footer = () => {
           "Act locally, impact globally"
         </h3>
         
-        {/* Infinite Slider with Twice as Large Images */}
+        <p className="mt-5 text-center w-full sm:w-3/5 mx-auto font-light dark:font-extrabold text-sm sm:text-base">
+          – Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi tích cực to lớn...
+        </p>
+
+        {/* Infinite Slider */}
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
             {Partners.map((partner, index) => (
-              <div key={index} className="px-4">
+              <div key={index} className="px-2">
                 <Image 
                   src={partner} 
-                  width={200} // Doubled from 100 to 200
-                  height={200} // Doubled from 100 to 200
+                  width={50} 
+                  height={50} 
                   alt={`Partner ${index + 1}`} 
                   className="object-contain mx-auto"
                 />
@@ -137,7 +141,7 @@ const Footer = () => {
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRo4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
             width="350"
             height="250"
             style={{ border: 0 }}

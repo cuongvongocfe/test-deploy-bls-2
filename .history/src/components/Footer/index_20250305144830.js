@@ -73,15 +73,19 @@ const Footer = () => {
           "Act locally, impact globally"
         </h3>
         
-        {/* Infinite Slider with Twice as Large Images */}
+        <p className="mt-5 text-center w-full sm:w-3/5 mx-auto font-light dark:font-extrabold text-sm sm:text-base">
+          – Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi tích cực to lớn...
+        </p>
+
+        {/* Infinite Slider with Larger Images */}
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
             {Partners.map((partner, index) => (
-              <div key={index} className="px-4">
+              <div key={index} className="px-2">
                 <Image 
                   src={partner} 
-                  width={200} // Doubled from 100 to 200
-                  height={200} // Doubled from 100 to 200
+                  width={100} // Increased from 50 to 100
+                  height={100} // Increased from 50 to 100
                   alt={`Partner ${index + 1}`} 
                   className="object-contain mx-auto"
                 />

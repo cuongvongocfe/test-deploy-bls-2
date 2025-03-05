@@ -73,6 +73,10 @@ const Footer = () => {
           "Act locally, impact globally"
         </h3>
         
+        <p className="mt-5 text-center w-full sm:w-3/5 mx-auto font-light dark:font-extrabold text-sm sm:text-base">
+          – Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi tích cực to lớn...
+        </p>
+
         {/* Infinite Slider with Twice as Large Images */}
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
