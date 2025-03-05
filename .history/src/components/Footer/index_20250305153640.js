@@ -108,7 +108,7 @@ const Footer = () => {
               <a href="tel:+84876789252" className="block text-2xl text-red-600 font-bold">
                 📞(+84) 87.6789.252
               </a>
-              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange text-1xl font-bold">
+              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange">
                 info@baolongscrap.vn
               </a>
               <p className="text-1xl font-bold">Mã Số Thuế: 1702260628</p>

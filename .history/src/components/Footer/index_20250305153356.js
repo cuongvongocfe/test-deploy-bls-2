@@ -102,28 +102,29 @@ const Footer = () => {
         </ul>
 
         <div className="mt-16 md:mt-24 border-t border-light py-6 flex flex-col md:flex-row justify-between gap-8">
-          <div className="space-y-4">
-            <h3 className="text-3xl font-semibold">Liên Hệ</h3>
-            <div className="space-y-3 text-gray-300">
-              <a href="tel:+84876789252" className="block text-2xl text-red-600 font-bold">
-                📞(+84) 87.6789.252
-              </a>
-              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange text-1xl font-bold">
-                info@baolongscrap.vn
-              </a>
-              <p className="text-1xl font-bold">Mã Số Thuế: 1702260628</p>
-              <a 
-                href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-Tv+X%E1%BB%AD+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block hover:text-orange text-1xl font-bold"
-              >
-                A17-36A Đường Số 02, Khu Nam An Hòa,<br />
-                Phường An Hòa, Thành Phố Rạch Giá,<br />
-                Tỉnh Kiên Giang
-              </a>
-            </div>
-          </div>
+  <div className="space-y-4">
+    <h3 className="text-3xl font-bold">Liên Hệ</h3>
+    <div className="space-y-3 text-gray-300">
+      <a href="tel:+84876789252" className="block text-3xl text-red-600 font-bold">
+        📞(+84) 87.6789.252
+      </a>
+      <a href="mailto:info@baolongscrap.vn" className="block text-3xl font-bold hover:text-orange">
+        info@baolongscrap.vn
+      </a>
+      <p className="text-3xl font-bold">Mã Số Thuế: 1702260628</p>
+      <a 
+        href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-+Tv+X%E1%BB%AD+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="block text-3xl font-bold hover:text-orange"
+      >
+        A17-36A Đường Số 02, Khu Nam An Hòa,<br />
+        Phường An Hòa, Thành Phố Rạch Giá,<br />
+        Tỉnh Kiên Giang
+      </a>
+    </div>
+  </div>
+</div>
 
 
 

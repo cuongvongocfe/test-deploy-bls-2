@@ -103,20 +103,20 @@ const Footer = () => {
 
         <div className="mt-16 md:mt-24 border-t border-light py-6 flex flex-col md:flex-row justify-between gap-8">
           <div className="space-y-4">
-            <h3 className="text-3xl font-semibold">Liên Hệ</h3>
+            <h3 className="text-2xl font-semibold">Liên Hệ</h3>
             <div className="space-y-3 text-gray-300">
-              <a href="tel:+84876789252" className="block text-2xl text-red-600 font-bold">
+              <a href="tel:+84876789252" className="block text-[20px] text-red-600 font-bold">
                 📞(+84) 87.6789.252
               </a>
-              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange text-1xl font-bold">
+              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange">
                 info@baolongscrap.vn
               </a>
-              <p className="text-1xl font-bold">Mã Số Thuế: 1702260628</p>
+              <p>Mã Số Thuế: 1702260628</p>
               <a 
                 href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-Tv+X%E1%BB%AD+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="block hover:text-orange text-1xl font-bold"
+                className="block hover:text-orange"
               >
                 A17-36A Đường Số 02, Khu Nam An Hòa,<br />
                 Phường An Hòa, Thành Phố Rạch Giá,<br />
@@ -125,18 +125,25 @@ const Footer = () => {
             </div>
           </div>
 
-
-
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Dịch Vụ</h3>
-            <div className="space-y-3 text-gray-300">
-              {Services.map((service) => (
-                <a key={service} href="/" className="block text-[20px] font-bold text-dark hover:text-orange">
-                  {service}
-                </a>
-              ))}
-            </div>
-          </div>
+          <div className="space-y-6">
+      <h3 className="text-2xl font-semibold text-blue-900 dark:text-blue-200 tracking-tight">
+        Dịch Vụ
+      </h3>
+      <div className="space-y-3">
+        {services.map((service, index) => (
+          <a
+            key={service} // Use a unique key, ideally an ID if available
+            href="/"
+            className="block text-xl font-medium text-blue-900 dark:text-blue-200 py-2 px-4 rounded-md hover:bg-blue-100 dark:hover:bg-blue-950 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 ease-in-out transform animate-slide-in"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {service}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"

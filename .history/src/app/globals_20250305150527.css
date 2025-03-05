@@ -81,12 +81,20 @@ code {
   }
 
 
-
+  .gradientBorder {
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #fff, #fff) padding-box,
+                linear-gradient(to right, #f97316, #3b82f6) border-box;
+  }
+  
+  .gradientBorder:hover {
+    transform: scale(1.05);
+  }
 
   @keyframes slideIn {
     0% {
       opacity: 0;
-      transform: translateY(15px);
+      transform: translateY(20px);
     }
     100% {
       opacity: 1;
@@ -94,6 +102,6 @@ code {
     }
   }
   
-  .animate-slide-in {
-    animation: slideIn 0.6s ease-in-out forwards;
+  .serviceItem {
+    animation: slideIn 0.5s ease-out forwards;
   }
