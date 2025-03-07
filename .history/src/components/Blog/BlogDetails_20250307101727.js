@@ -3,7 +3,7 @@ import { format, parseISO } from "date-fns";
 import Link from "next/link";
 import React, { useMemo } from "react";
 import { slug as slugify } from "github-slugger";
-import ViewCounter from "./ViewCounter";
+// import ViewCounter from "./ViewCounter";
 
 // Move static class names outside the component
 const CONTAINER_CLASSES = [
@@ -65,7 +65,7 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
         {formattedDate}
       </time>
       <span className={ITEM_CLASSES}>
-        <ViewCounter slug={blogSlug} />
+        {/* <ViewCounter slug={blogSlug} /> */}
       </span>
       <div className={ITEM_CLASSES}>
         {readingTime?.text ?? "Reading time unavailable"}

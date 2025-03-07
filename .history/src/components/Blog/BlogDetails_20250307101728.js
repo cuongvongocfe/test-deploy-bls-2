@@ -65,7 +65,7 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
         {formattedDate}
       </time>
       <span className={ITEM_CLASSES}>
-        <ViewCounter slug={blogSlug} />
+        {/* <ViewCounter slug={blogSlug} /> */}
       </span>
       <div className={ITEM_CLASSES}>
         {readingTime?.text ?? "Reading time unavailable"}
