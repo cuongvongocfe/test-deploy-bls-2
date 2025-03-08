@@ -56,7 +56,7 @@ const Header = () => {
   const toggleImages = () => setShowImages(!showImages);
 
   const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
-  const linkClass = "mx-2 my-2"; // Thêm my-2 để tăng khoảng cách dọc
+  const linkClass = "mx-2";
   const iconClass = "inline-block w-8 h-8 mr-4 hover:scale-125 transition-all ease duration-200";
   const themeButtonClass = cx(
     "w-8 h-8 ease ml-2 flex items-center justify-center rounded-full p-1",
@@ -103,14 +103,14 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <nav 
-        className={`${navClass} flex sm:hidden flex-col items-center gap-4`} // Thêm gap-4 để tăng khoảng cách
+        className={`${navClass} flex sm:hidden flex-col items-center`}
         style={{ 
-          top: click ? "4rem" : "-15rem",
-          opacity: click ? 1 : 0,
-          visibility: click ? "visible" : "hidden"
+          top: click ? "4rem" : "-15rem", // Tăng giá trị âm để ẩn hoàn toàn
+          opacity: click ? 1 : 0, // Thêm opacity để tránh nhô ra
+          visibility: click ? "visible" : "hidden" // Đảm bảo không hiển thị khi chưa click
         }}
       >
-        <div className="flex flex-col items-center w-full gap-4"> {/* Thêm gap-4 ở đây */}
+        <div className="flex flex-col items-center w-full">
           <Link href="/about" className={linkClass}>Giới Thiệu</Link>
           <Link href="/contact" className={linkClass}>Liên Hệ</Link>
           <button
@@ -128,9 +128,10 @@ const Header = () => {
             {mode === "light" ? <MoonIcon className="fill-dark" /> : <SunIcon className="fill-dark" />}
           </button>
         </div>
+        {/* Nút đóng menu */}
         <button
           onClick={toggle}
-          className="mt-4 py-1 px-3 border border-solid border-dark rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200" // Thêm mt-4 để nút "Đóng" cách xa hơn
+          className="mt-2 py-1 px-3 border border-solid border-dark rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200"
           aria-label="Close menu"
         >
           Đóng

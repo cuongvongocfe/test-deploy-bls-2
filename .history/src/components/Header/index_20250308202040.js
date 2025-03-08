@@ -1,52 +1,3 @@
-"use client";
-import Link from "next/link";
-import Logo from "./Logo";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../Icons";
-import siteMetadata from "@/src/utils/siteMetaData";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import { useState } from "react";
-import { cx } from "@/src/utils";
-import Image from "next/image";
-
-// CSS tùy chỉnh cho animation viền
-const styles = `
-  .animated-border {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  .animated-border::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 2px solid transparent;
-    border-radius: inherit;
-    background: linear-gradient(45deg, #ff6f61, #de3d6d, #ff6f61);
-    background-size: 200% 200%;
-    animation: gradientSpin 3s linear infinite;
-    z-index: -1;
-  }
-  .animated-border:hover::before {
-    background: linear-gradient(45deg, #00b4d8, #0077b6, #00b4d8);
-    animation: pulseBorder 1s ease-in-out infinite;
-  }
-  .animated-border:hover {
-    transform: scale(1.1);
-  }
-  @keyframes gradientSpin {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 200% 200%; }
-  }
-  @keyframes pulseBorder {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
-`;
-
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
   const [click, setClick] = useState(false);
@@ -56,7 +7,7 @@ const Header = () => {
   const toggleImages = () => setShowImages(!showImages);
 
   const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
-  const linkClass = "mx-2 my-2"; // Thêm my-2 để tăng khoảng cách dọc
+  const linkClass = "mx-6"; // Đã thay đổi từ mx-2 thành mx-6
   const iconClass = "inline-block w-8 h-8 mr-4 hover:scale-125 transition-all ease duration-200";
   const themeButtonClass = cx(
     "w-8 h-8 ease ml-2 flex items-center justify-center rounded-full p-1",
@@ -103,14 +54,14 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <nav 
-        className={`${navClass} flex sm:hidden flex-col items-center gap-4`} // Thêm gap-4 để tăng khoảng cách
+        className={`${navClass} flex sm:hidden flex-col items-center`}
         style={{ 
           top: click ? "4rem" : "-15rem",
           opacity: click ? 1 : 0,
           visibility: click ? "visible" : "hidden"
         }}
       >
-        <div className="flex flex-col items-center w-full gap-4"> {/* Thêm gap-4 ở đây */}
+        <div className="flex flex-col items-center w-full">
           <Link href="/about" className={linkClass}>Giới Thiệu</Link>
           <Link href="/contact" className={linkClass}>Liên Hệ</Link>
           <button
@@ -130,7 +81,7 @@ const Header = () => {
         </div>
         <button
           onClick={toggle}
-          className="mt-4 py-1 px-3 border border-solid border-dark rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200" // Thêm mt-4 để nút "Đóng" cách xa hơn
+          className="mt-2 py-1 px-3 border border-solid border-dark rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200"
           aria-label="Close menu"
         >
           Đóng
