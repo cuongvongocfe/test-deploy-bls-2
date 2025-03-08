@@ -72,6 +72,7 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className={`${navClass} hidden sm:flex`}>
+        <Link href="/" className={linkClass}>Home</Link>
         <Link href="/about" className={linkClass}>Giới Thiệu</Link>
         <Link href="/contact" className={linkClass}>Liên Hệ</Link>
         <button
