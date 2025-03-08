@@ -6,7 +6,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import PhoneInfo from "./PhoneInfo";
+import PhoneInfo from "../../PhoneInfo.js"; // Sử dụng đường dẫn bạn cung cấp
 
 // Static assets
 import iso27001 from "../../../public/blogs/iso_27001.png";

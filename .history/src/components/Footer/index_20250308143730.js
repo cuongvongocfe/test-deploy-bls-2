@@ -6,7 +6,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import PhoneInfo from "./PhoneInfo";
+import PhoneInfo from "../../PhoneInfo.js"; // Import PhoneInfo
 
 // Static assets
 import iso27001 from "../../../public/blogs/iso_27001.png";
@@ -114,7 +114,7 @@ const Footer = () => {
               </a>
               <p className="text-1xl font-bold">Mã Số Thuế: 1702260628</p>
               <a
-                href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-Tv+X%E1%BB%83+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z"
+                href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-Tv+X%E1%BB%AD+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:text-orange text-1xl font-bold"
@@ -153,7 +153,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <PhoneInfo /> {/* Thêm PhoneInfo */}
+      {/* Thêm PhoneInfo */}
+      <PhoneInfo />
     </footer>
   );
 };

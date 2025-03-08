@@ -96,7 +96,6 @@ export default function ContactForm() {
           className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer text-gray-900 dark:text-gray-100"
         />
       </form>
-      <PhoneInfo />
     </div>
   );
 }
