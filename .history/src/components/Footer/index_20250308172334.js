@@ -36,10 +36,10 @@ const Services = [
   "Phá Dở Công Trình",
   "Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng",
   // Để thử thanh cuộn, bạn có thể thêm nhiều mục hơn trong tương lai
-  // "Dịch vụ 5",
-  // "Dịch vụ 6",
-  // "Dịch vụ 7",
-  // "Dịch vụ 8",
+  "Dịch vụ 5",
+  "Dịch vụ 6",
+  "Dịch vụ 7",
+  "Dịch vụ 8",
 ];
 
 const Footer = () => {

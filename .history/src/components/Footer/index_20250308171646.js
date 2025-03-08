@@ -35,11 +35,6 @@ const Services = [
   "Xử Lý Chất Thải Y Tế - Nguy Hại",
   "Phá Dở Công Trình",
   "Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng",
-  // Để thử thanh cuộn, bạn có thể thêm nhiều mục hơn trong tương lai
-  // "Dịch vụ 5",
-  // "Dịch vụ 6",
-  // "Dịch vụ 7",
-  // "Dịch vụ 8",
 ];
 
 const Footer = () => {
@@ -74,6 +69,7 @@ const Footer = () => {
     ],
   };
 
+  // Filter services based on search term
   const filteredServices = Services.filter(service =>
     service.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -85,6 +81,7 @@ const Footer = () => {
           "Act locally, impact globally"
         </h3>
 
+        {/* Infinite Slider */}
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
             {Partners.map((partner, index) => (
@@ -116,26 +113,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-3xl font-semibold">Liên Hệ</h3>
             <div className="space-y-3 text-gray-300">
-              <a 
-                href="tel:+84876789252" 
-                className="block text-xl font-bold text-red-600 hover:text-red-700 transition-colors duration-200"
-              >
-                📞 (+84) 87.6789.252
+              <a href="tel:+84876789252" className="block text-2xl text-red-600 font-bold">
+                📞(+84) 87.6789.252
               </a>
-              <a 
-                href="mailto:info@baolongscrap.vn" 
-                className="block text-xl font-medium hover:text-orange transition-colors duration-200"
-              >
+              <a href="mailto:info@baolongscrap.vn" className="block hover:text-orange text-1xl font-bold">
                 info@baolongscrap.vn
               </a>
-              <p className="text-xl font-medium">
-                Mã Số Thuế: 1702260628
-              </p>
+              <p className="text-1xl font-bold">Mã Số Thuế: 1702260628</p>
               <a
                 href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-+Tv+X%E1%BB%83+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-xl font-medium hover:text-orange transition-colors duration-200"
+                className="block hover:text-orange text-1xl font-bold"
               >
                 A17-36A Đường Số 02, Khu Nam An Hòa,<br />
                 Phường An Hòa, Thành Phố Rạch Giá,<br />
@@ -167,32 +156,30 @@ const Footer = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full px-4 py-2 mb-3 text-dark rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange transition-all duration-300"
               />
-              <div className="max-h-[250px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-orange scrollbar-track-gray-200 hover:scrollbar-thumb-orange-600">
-                <ul className="space-y-3 text-white">
-                  {filteredServices.length > 0 ? (
-                    filteredServices.map((service) => (
-                      <li 
-                        key={service}
-                        className="transform transition-all duration-200 hover:translate-x-2"
+              <ul className="space-y-3 text-white">
+                {filteredServices.length > 0 ? (
+                  filteredServices.map((service) => (
+                    <li 
+                      key={service}
+                      className="transform transition-all duration-200 hover:translate-x-2"
+                    >
+                      <a 
+                        href="/" 
+                        className="block text-[20px] font-bold hover:text-orange"
                       >
-                        <a 
-                          href="/" 
-                          className="block text-[20px] font-bold hover:text-orange"
-                        >
-                          {service}
-                        </a>
-                      </li>
-                    ))
-                  ) : (
-                    <li className="text-[20px] font-bold">Không tìm thấy dịch vụ</li>
-                  )}
-                </ul>
-              </div>
+                        {service}
+                      </a>
+                    </li>
+                  ))
+                ) : (
+                  <li className="text-[20px] font-bold">Không tìm thấy dịch vụ</li>
+                )}
+              </ul>
             </div>
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmc bmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
             width="350"
             height="250"
             style={{ border: 0 }}

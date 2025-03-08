@@ -35,11 +35,6 @@ const Services = [
   "Xử Lý Chất Thải Y Tế - Nguy Hại",
   "Phá Dở Công Trình",
   "Thu Mua Tài Sản Thanh Lý - Tài Sản Ngân Hàng",
-  // Để thử thanh cuộn, bạn có thể thêm nhiều mục hơn trong tương lai
-  // "Dịch vụ 5",
-  // "Dịch vụ 6",
-  // "Dịch vụ 7",
-  // "Dịch vụ 8",
 ];
 
 const Footer = () => {
@@ -167,32 +162,30 @@ const Footer = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full px-4 py-2 mb-3 text-dark rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange transition-all duration-300"
               />
-              <div className="max-h-[250px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-orange scrollbar-track-gray-200 hover:scrollbar-thumb-orange-600">
-                <ul className="space-y-3 text-white">
-                  {filteredServices.length > 0 ? (
-                    filteredServices.map((service) => (
-                      <li 
-                        key={service}
-                        className="transform transition-all duration-200 hover:translate-x-2"
+              <ul className="space-y-3 text-white">
+                {filteredServices.length > 0 ? (
+                  filteredServices.map((service) => (
+                    <li 
+                      key={service}
+                      className="transform transition-all duration-200 hover:translate-x-2"
+                    >
+                      <a 
+                        href="/" 
+                        className="block text-[20px] font-bold hover:text-orange"
                       >
-                        <a 
-                          href="/" 
-                          className="block text-[20px] font-bold hover:text-orange"
-                        >
-                          {service}
-                        </a>
-                      </li>
-                    ))
-                  ) : (
-                    <li className="text-[20px] font-bold">Không tìm thấy dịch vụ</li>
-                  )}
-                </ul>
-              </div>
+                        {service}
+                      </a>
+                    </li>
+                  ))
+                ) : (
+                  <li className="text-[20px] font-bold">Không tìm thấy dịch vụ</li>
+                )}
+              </ul>
             </div>
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmc bmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgbmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
             width="350"
             height="250"
             style={{ border: 0 }}
