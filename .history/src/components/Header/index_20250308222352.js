@@ -182,14 +182,14 @@ const Header = () => {
             </button>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Image
-                src="/blogs/image2.jpg"
+                src="/images/image1.jpg"
                 alt="ISO Certificate 1"
                 width={400}
                 height={300}
                 className="w-full h-auto object-cover rounded-lg"
               />
               <Image
-                src="/blogs/image2.jpg"
+                src="/blogs/phadocongtrinh1.jpg"
                 alt="ISO Certificate 2"
                 width={400}
                 height={300}
