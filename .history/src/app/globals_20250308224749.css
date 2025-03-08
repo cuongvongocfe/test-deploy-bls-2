@@ -154,3 +154,24 @@ code {
   100% { transform: rotate(360deg); }
 }
 
+.lottie-container {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-in-out forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lottie-player {
+  width: 300px;
+  height: 300px;
+}

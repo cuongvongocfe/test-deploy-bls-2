@@ -181,7 +181,7 @@ const Header = () => {
             </button>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Image
-                src="/blogs/image2.jpg"
+                src="/images/image2.jpg"
                 alt="ISO Certificate 1"
                 width={400}
                 height={300}

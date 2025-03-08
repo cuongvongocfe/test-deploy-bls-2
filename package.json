@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dotlottie/react-player": "^1.2.1",
+    "@dotlottie/react-player": "^1.6.19",
     "@emailjs/browser": "^4.4.1",
     "@supabase/auth-helpers-nextjs": "^0.7.4",
     "@tailwindcss/forms": "^0.5.5",

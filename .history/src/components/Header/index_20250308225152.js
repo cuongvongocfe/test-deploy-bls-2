@@ -18,10 +18,10 @@ const styles = `
   .animated-border::before {
     content: '';
     position: absolute;
-    top: -5px; /* Giữ background như hiện tại */
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     border: 2px solid transparent;
     border-radius: inherit;
     background: linear-gradient(45deg, #ff6f61, #de3d6d, #ff6f61);
@@ -56,7 +56,8 @@ const Header = () => {
   const toggleImages = () => setShowImages(!showImages);
 
   const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
-  const linkClass = "mx-2 my-2";
+  const linkClass = "mx-2 my-2"; // Thêm my-2 để tăng khoảng cách dọc
+  const iconClass = "inline-block w-8 h-8 mr-4 hover:scale-125 transition-all ease duration-200";
   const themeButtonClass = cx(
     "w-8 h-8 ease ml-2 flex items-center justify-center rounded-full p-1",
     mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
@@ -158,14 +159,14 @@ const Header = () => {
 
       {/* Social Icons */}
       <div className="hidden sm:flex items-center justify-center space-x-4 p-2">
-        <a href={siteMetadata.linkedin} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via LinkedIn" target="_blank">
-          <LinkedinIcon className="w-7 h-7 fill-current text-dark dark:text-light" />
+        <a href={siteMetadata.linkedin} className="w-8 h-8 flex items-center justify-center hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via LinkedIn" target="_blank">
+          <LinkedinIcon className="w-6 h-6" />
         </a>
-        <a href={siteMetadata.twitter} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Twitter" target="_blank">
-          <TwitterIcon className="w-7 h-7 fill-current text-dark dark:text-light" />
+        <a href={siteMetadata.twitter} className="w-8 h-8 flex items-center justify-center hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Twitter" target="_blank">
+          <TwitterIcon className="w-6 h-6" />
         </a>
-        <a href={siteMetadata.github} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Check my profile on Github" target="_blank">
-          <GithubIcon className="w-7 h-7 fill-current text-dark dark:text-light" />
+        <a href={siteMetadata.github} className="w-8 h-8 flex items-center justify-center hover:scale-125 transition-all ease duration-200 animated-border dark:fill-light" aria-label="Check my profile on Github" target="_blank">
+          <GithubIcon className="w-6 h-6" />
         </a>
       </div>
 
@@ -181,7 +182,7 @@ const Header = () => {
             </button>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Image
-                src="/blogs/image2.jpg"
+                src="/images/image1.jpg"
                 alt="ISO Certificate 1"
                 width={400}
                 height={300}
