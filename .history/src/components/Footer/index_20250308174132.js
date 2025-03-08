@@ -89,7 +89,6 @@ const Footer = () => {
                   height={200}
                   alt={`Partner ${index + 1}`}
                   className="object-contain mx-auto"
-                  style={{ maxHeight: "200px" }} // Giới hạn chiều cao tối đa
                 />
               </div>
             ))}

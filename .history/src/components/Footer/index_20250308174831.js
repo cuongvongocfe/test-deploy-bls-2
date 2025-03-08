@@ -81,18 +81,24 @@ const Footer = () => {
 
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
-            {Partners.map((partner, index) => (
-              <div key={index} className="px-4 flex items-center justify-center h-[200px]">
-                <Image
-                  src={partner}
-                  width={200}
-                  height={200}
-                  alt={`Partner ${index + 1}`}
-                  className="object-contain mx-auto"
-                  style={{ maxHeight: "200px" }} // Giới hạn chiều cao tối đa
-                />
-              </div>
-            ))}
+            {Partners.map((partner, index) => {
+              // partner5 ở index 4, partner7 ở index 6
+              const isSmaller = index === 4 || index === 6; // Chỉ partner5 và partner7 nhỏ hơn
+              const imageHeight = isSmaller ? "120px" : "180px"; // Tăng từ 150px lên 180px cho các partner khác
+
+              return (
+                <div key={index} className="px-4 flex items-center justify-center h-[220px]">
+                  <Image
+                    src={partner}
+                    width={200}
+                    height={isSmaller ? 120 : 180} // Đặt height tương ứng
+                    alt={`Partner ${index + 1}`}
+                    className="object-contain mx-auto"
+                    style={{ height: imageHeight, width: "auto", objectFit: "contain" }} // Ép chiều cao cố định
+                  />
+                </div>
+              );
+            })}
           </Slider>
         </div>
 

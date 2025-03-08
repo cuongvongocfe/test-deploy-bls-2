@@ -86,10 +86,10 @@ const Footer = () => {
                 <Image
                   src={partner}
                   width={200}
-                  height={200}
+                  height={150} // Đặt chiều cao cố định nhỏ hơn để kiểm soát tốt hơn
                   alt={`Partner ${index + 1}`}
                   className="object-contain mx-auto"
-                  style={{ maxHeight: "200px" }} // Giới hạn chiều cao tối đa
+                  style={{ height: "150px", width: "auto" }} // Ép chiều cao cố định
                 />
               </div>
             ))}
