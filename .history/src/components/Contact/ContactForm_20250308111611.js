@@ -20,7 +20,7 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     console.log("Form data:", data);
     emailjs
-      .send("Bảo Long Scrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
+      .send("baolongscrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
       .then(
         (result) => {
           console.log("Email sent successfully!", result.text);
@@ -37,7 +37,7 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in text-center">
-        <p className="text-green-500">CẢM ƠN BẠN ĐÃ LIÊN HỆ VỚI CHÚNG TÔI !</p>
+        <p className="text-green-500">Your request has been sent successfully!</p>
       </div>
     );
   }

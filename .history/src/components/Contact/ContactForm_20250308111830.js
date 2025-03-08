@@ -20,7 +20,7 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     console.log("Form data:", data);
     emailjs
-      .send("Bảo Long Scrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
+      .send("baolongscrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
       .then(
         (result) => {
           console.log("Email sent successfully!", result.text);

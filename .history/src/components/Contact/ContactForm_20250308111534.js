@@ -20,7 +20,7 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     console.log("Form data:", data);
     emailjs
-      .send("Bảo Long Scrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
+      .send("baolongscrap", "template_fi6z8jn", data, "BKW-oapRfTXpxNYeT")
       .then(
         (result) => {
           console.log("Email sent successfully!", result.text);
@@ -37,7 +37,7 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in text-center">
-        <p className="text-green-500">CẢM ƠN BẠN ĐÃ LIÊN HỆ VỚI CHÚNG TÔI !</p>
+        <p className="text-green-500">Your request has been sent successfully!</p>
       </div>
     );
   }
@@ -52,7 +52,7 @@ export default function ContactForm() {
         <div>
           <input
             type="text"
-            placeholder="HỌ VÀ TÊN"
+            placeholder="your name"
             {...register("name", { required: "Name is required", maxLength: 80 })}
             className="outline-none border-0 p-0 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray focus:border-gray bg-transparent w-72"
           />
@@ -62,7 +62,7 @@ export default function ContactForm() {
         <div>
           <input
             type="email"
-            placeholder="EMAIL"
+            placeholder="your@email"
             {...register("email", {
               required: "Email is required",
               pattern: { value: /^\S+@\S+$/i, message: "Invalid email" },
@@ -75,7 +75,7 @@ export default function ContactForm() {
         <div>
           <input
             type="tel"
-            placeholder="SỐ ĐIỆN THOẠI"
+            placeholder="your phone"
             {...register("phone number", {})}
             className="outline-none border-0 p-0 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray focus:border-gray bg-transparent w-72"
           />
@@ -85,7 +85,7 @@ export default function ContactForm() {
       {/* Textarea và nút submit */}
       <textarea
         {...register("project details", {})}
-        placeholder=""
+        placeholder="My project is about..."
         rows={3}
         className="w-full outline-none border-0 p-0 mx-0 focus:ring-0 placeholder:text-lg border-b border-gray focus:border-gray bg-transparent mb-4"
       />
