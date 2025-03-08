@@ -133,7 +133,6 @@ code {
   animation: bounce 2s infinite;
 }
 
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -145,11 +144,8 @@ code {
 
 /* border iso  */
 
-.animated-border::after {
-  border: 2px dashed #ff6f61;
-  animation: dash 2s linear infinite;
-}
-@keyframes dash {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.animated-border:hover::before {
+  
+  animation-play-state: paused;
+   /* Dừng animation khi hover */
 }

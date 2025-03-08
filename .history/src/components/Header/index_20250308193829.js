@@ -13,7 +13,7 @@ const styles = `
   .animated-border {
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease; /* Animation mượt mà khi phóng to */
+    transition: all 0.3s ease;
   }
   .animated-border::before {
     content: '';
@@ -30,11 +30,8 @@ const styles = `
     z-index: -1;
   }
   .animated-border:hover::before {
-    background: linear-gradient(45deg, #00b4d8, #0077b6, #00b4d8); /* Đổi màu khi hover */
-    animation: pulseBorder 1s ease-in-out infinite; /* Animation viền khi hover */
-  }
-  .animated-border:hover {
-    transform: scale(1.1); /* Phóng to nút khi hover */
+    animation: pulse 1s ease-in-out infinite;
+    background: linear-gradient(45deg, #00b4d8, #0077b6, #00b4d8); /* Màu khác khi hover */
   }
   @keyframes gradientSpin {
     0% {
@@ -44,7 +41,7 @@ const styles = `
       background-position: 200% 200%;
     }
   }
-  @keyframes pulseBorder {
+  @keyframes pulse {
     0% {
       transform: scale(1);
     }
@@ -54,6 +51,9 @@ const styles = `
     100% {
       transform: scale(1);
     }
+  }
+  .animated-border:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
   }
 `;
 

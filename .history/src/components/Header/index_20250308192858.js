@@ -8,55 +8,6 @@ import { useState } from "react";
 import { cx } from "@/src/utils";
 import Image from "next/image";
 
-// CSS tùy chỉnh cho animation viền
-const styles = `
-  .animated-border {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Animation mượt mà khi phóng to */
-  }
-  .animated-border::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 2px solid transparent;
-    border-radius: inherit;
-    background: linear-gradient(45deg, #ff6f61, #de3d6d, #ff6f61);
-    background-size: 200% 200%;
-    animation: gradientSpin 3s linear infinite;
-    z-index: -1;
-  }
-  .animated-border:hover::before {
-    background: linear-gradient(45deg, #00b4d8, #0077b6, #00b4d8); /* Đổi màu khi hover */
-    animation: pulseBorder 1s ease-in-out infinite; /* Animation viền khi hover */
-  }
-  .animated-border:hover {
-    transform: scale(1.1); /* Phóng to nút khi hover */
-  }
-  @keyframes gradientSpin {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 200% 200%;
-    }
-  }
-  @keyframes pulseBorder {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-`;
-
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
   const [click, setClick] = useState(false);
@@ -73,15 +24,12 @@ const Header = () => {
     mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
   );
   const imageButtonClass = cx(
-    "py-2 px-4 border border-solid border-dark rounded-full font-medium hover:bg-gray-200 transition-colors duration-200 ml-2 animated-border",
+    "py-2 px-4 border border-solid border-dark rounded-full font-medium hover:bg-gray-200 transition-colors duration-200 ml-2",
     mode === "light" ? "bg-light text-dark" : "bg-dark text-light"
   );
 
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
-      {/* Thêm CSS tùy chỉnh vào <style> */}
-      <style jsx global>{styles}</style>
-
       <Logo />
 
       {/* Hamburger Menu */}

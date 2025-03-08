@@ -84,15 +84,12 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <div className="w-full flex justify-center">
-          <textarea
-            {...register("project details", {})}
-            placeholder="NỘI DUNG"
-            rows={3}
-            className="outline-none border-0 p-0 focus:ring-0 placeholder:text-lg border-b border-gray-400 focus:border-gray-600 bg-transparent max-w-3xl w-full mb-6 mt-8 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-gray-100"
-          />
-        </div>
-
+        <textarea
+          {...register("project details", {})}
+          placeholder="NỘI DUNG"
+          rows={3}
+          className="w-full max-w-5xl outline-none border-0 p-0 mx-0 focus:ring-0 placeholder:text-lg border-b border-gray-400 focus:border-gray-600 bg-transparent mb-6 mt-8 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-gray-100"
+        />
         <input
           type="submit"
           value="GỬI YÊU CẦU"

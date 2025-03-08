@@ -50,7 +50,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in flex flex-col items-center text-gray-900 dark:text-gray-100"
       >
-        <div className="flex flex-col sm:flex-row sm:space-x-4 mb-10 w-full justify-center gap-y-4 sm:gap-y-0">
+        <div className="flex flex-col sm:flex-row sm:space-x-4 mb-6 w-full justify-center gap-y-4 sm:gap-y-0">
           <div className="w-full sm:w-auto">
             <input
               type="text"
@@ -84,15 +84,12 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <div className="w-full flex justify-center">
-          <textarea
-            {...register("project details", {})}
-            placeholder="NỘI DUNG"
-            rows={3}
-            className="outline-none border-0 p-0 focus:ring-0 placeholder:text-lg border-b border-gray-400 focus:border-gray-600 bg-transparent max-w-3xl w-full mb-6 mt-8 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-gray-100"
-          />
-        </div>
-
+        <textarea
+          {...register("project details", {})}
+          placeholder="NỘI DUNG"
+          rows={3}
+          className="w-full max-w-3xl outline-none border-0 p-0 mx-0 focus:ring-0 placeholder:text-lg border-b border-gray-400 focus:border-gray-600 bg-transparent mb-6 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-gray-100"
+        />
         <input
           type="submit"
           value="GỬI YÊU CẦU"

@@ -13,6 +13,7 @@ export default function ContactForm() {
   } = useForm();
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showImages, setShowImages] = useState(false); // Trạng thái để kiểm soát hiển thị hình ảnh
 
   useEffect(() => {
     emailjs.init("BKW-oapRfTXpxNYeT");
@@ -35,6 +36,11 @@ export default function ContactForm() {
       );
   };
 
+  // Hàm để toggle hiển thị hình ảnh
+  const toggleImages = () => {
+    setShowImages(!showImages);
+  };
+
   if (isSubmitted) {
     return (
       <div className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in text-center text-gray-900 dark:text-gray-100">
@@ -46,6 +52,12 @@ export default function ContactForm() {
 
   return (
     <div className="relative px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      {/* Tiêu đề */}
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-100">
+        LIÊN HỆ VỚI CHÚNG TÔI
+      </h2>
+
+      {/* Form */}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in flex flex-col items-center text-gray-900 dark:text-gray-100"
@@ -99,6 +111,44 @@ export default function ContactForm() {
           className="mt-8 font-medium inline-block capitalize text-base sm:text-lg lg:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer text-gray-900 dark:text-gray-100"
         />
       </form>
+
+      {/* Floating Button */}
+      <button
+        onClick={toggleImages}
+        className="fixed bottom-6 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300"
+      >
+        XEM HÌNH ẢNH
+      </button>
+
+      {/* Modal hiển thị hình ảnh */}
+      {showImages && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl w-full relative">
+            {/* Button đóng */}
+            <button
+              onClick={toggleImages}
+              className="absolute top-2 right-2 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100"
+            >
+              ✕
+            </button>
+
+            {/* Hiển thị 2 hình ảnh */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img
+                src="/path/to/image1.jpg" // Thay bằng đường dẫn hình ảnh thực tế
+                alt="Hình ảnh 1"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <img
+                src="/path/to/image2.jpg" // Thay bằng đường dẫn hình ảnh thực tế
+                alt="Hình ảnh 2"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       <PhoneInfo />
     </div>
   );

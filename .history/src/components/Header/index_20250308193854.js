@@ -8,14 +8,14 @@ import { useState } from "react";
 import { cx } from "@/src/utils";
 import Image from "next/image";
 
-// CSS tùy chỉnh cho animation viền
+// Thêm CSS tùy chỉnh cho animation
 const styles = `
   .animated-border {
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease; /* Animation mượt mà khi phóng to */
+    z-index: 1;
   }
-  .animated-border::before {
+  .animated-border::after {
     content: '';
     position: absolute;
     top: -2px;
@@ -23,36 +23,17 @@ const styles = `
     right: -2px;
     bottom: -2px;
     border: 2px solid transparent;
+    border-top-color: #ff6f61; /* Màu viền sáng */
     border-radius: inherit;
-    background: linear-gradient(45deg, #ff6f61, #de3d6d, #ff6f61);
-    background-size: 200% 200%;
-    animation: gradientSpin 3s linear infinite;
+    animation: spin 2s linear infinite;
     z-index: -1;
   }
-  .animated-border:hover::before {
-    background: linear-gradient(45deg, #00b4d8, #0077b6, #00b4d8); /* Đổi màu khi hover */
-    animation: pulseBorder 1s ease-in-out infinite; /* Animation viền khi hover */
-  }
-  .animated-border:hover {
-    transform: scale(1.1); /* Phóng to nút khi hover */
-  }
-  @keyframes gradientSpin {
+  @keyframes spin {
     0% {
-      background-position: 0% 0%;
+      transform: rotate(0deg);
     }
     100% {
-      background-position: 200% 200%;
-    }
-  }
-  @keyframes pulseBorder {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
+      transform: rotate(360deg);
     }
   }
 `;
