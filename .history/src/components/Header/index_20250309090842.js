@@ -1,14 +1,7 @@
 "use client";
 import Link from "next/link";
 import Logo from "./Logo";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MoonIcon,
-  SunIcon,
-  TwitterIcon,
-} from "../Icons";
+import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
@@ -62,8 +55,7 @@ const Header = () => {
   const toggle = () => setClick(!click);
   const toggleImages = () => setShowImages(!showImages);
 
-  const navClass =
-    "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
+  const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
   const linkClass = "mx-2 my-2";
   const themeButtonClass = cx(
     "w-8 h-8 ease ml-2 flex items-center justify-center rounded-full p-1",
@@ -76,38 +68,32 @@ const Header = () => {
 
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
-      <style jsx global>
-        {styles}
-      </style>
+      <style jsx global>{styles}</style>
 
       <Logo />
 
       {/* Hamburger Menu */}
-      <button
-        className="inline-block sm:hidden z-50"
-        onClick={toggle}
+      <button 
+        className="inline-block sm:hidden z-50" 
+        onClick={toggle} 
         aria-label="Hamburger Menu"
       >
         <div className="w-8 cursor-pointer transition-all ease duration-300">
           <div className="relative">
-            <span
+            <span 
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
               style={{
-                transform: click
-                  ? "rotate(-45deg) translateY(0)"
-                  : "rotate(0deg) translateY(6px)",
+                transform: click ? "rotate(-45deg) translateY(0)" : "rotate(0deg) translateY(6px)"
               }}
             />
-            <span
+            <span 
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
               style={{ opacity: click ? 0 : 1 }}
             />
-            <span
+            <span 
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
               style={{
-                transform: click
-                  ? "rotate(45deg) translateY(0)"
-                  : "rotate(0deg) translateY(-6px)",
+                transform: click ? "rotate(45deg) translateY(0)" : "rotate(0deg) translateY(-6px)"
               }}
             />
           </div>
@@ -115,21 +101,17 @@ const Header = () => {
       </button>
 
       {/* Mobile Navigation */}
-      <nav
-        className={`${navClass} flex sm:hidden flex-col items-center gap-4`}
-        style={{
+      <nav 
+        className={`${navClass} flex sm:hidden flex-col items-center gap-4`} 
+        style={{ 
           top: click ? "4rem" : "-15rem",
           opacity: click ? 1 : 0,
-          visibility: click ? "visible" : "hidden",
+          visibility: click ? "visible" : "hidden"
         }}
       >
         <div className="flex flex-col items-center w-full gap-4">
-          <Link href="/about" className={linkClass}>
-            Giới Thiệu
-          </Link>
-          <Link href="/contact" className={linkClass}>
-            Liên Hệ
-          </Link>
+          <Link href="/about" className={linkClass}>Giới Thiệu</Link>
+          <Link href="/contact" className={linkClass}>Liên Hệ</Link>
           <button
             onClick={toggleImages}
             className={imageButtonClass}
@@ -142,11 +124,7 @@ const Header = () => {
             className={themeButtonClass}
             aria-label="theme-switcher"
           >
-            {mode === "light" ? (
-              <MoonIcon className="fill-dark" />
-            ) : (
-              <SunIcon className="fill-dark" />
-            )}
+            {mode === "light" ? <MoonIcon className="fill-dark" /> : <SunIcon className="fill-dark" />}
           </button>
         </div>
         <button
@@ -160,12 +138,8 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className={`${navClass} hidden sm:flex`}>
-        <Link href="/about" className={linkClass}>
-          Giới Thiệu
-        </Link>
-        <Link href="/contact" className={linkClass}>
-          Liên Hệ
-        </Link>
+        <Link href="/about" className={linkClass}>Giới Thiệu</Link>
+        <Link href="/contact" className={linkClass}>Liên Hệ</Link>
         <button
           onClick={toggleImages}
           className={imageButtonClass}
@@ -178,39 +152,20 @@ const Header = () => {
           className={themeButtonClass}
           aria-label="theme-switcher"
         >
-          {mode === "light" ? (
-            <MoonIcon className="fill-dark" />
-          ) : (
-            <SunIcon className="fill-dark" />
-          )}
+          {mode === "light" ? <MoonIcon className="fill-dark" /> : <SunIcon className="fill-dark" />}
         </button>
       </nav>
 
       {/* Social Icons */}
       <div className="hidden sm:flex items-center justify-center space-x-4 p-2">
-        <a
-          href={siteMetadata.linkedin}
-          className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border"
-          aria-label="Reach out to me via LinkedIn"
-          target="_blank"
-        >
+        <a href={siteMetadata.linkedin} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via LinkedIn" target="_blank">
           <LinkedinIcon className="w-[30px] h-[30px] fill-current text-dark dark:text-light" />
         </a>
-        <a
-          href={siteMetadata.twitter}
-          className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border"
-          aria-label="Reach out to me via Twitter"
-          target="_blank"
-        >
-          <TwitterIcon className="w-[30px] h-[30px] fill-current text-dark dark:text-light" />
+        <a href={siteMetadata.twitter} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Twitter" target="_blank">
+          <TwitterIcon className="w-6 h-6 fill-current text-dark dark:text-light" />
         </a>
-        <a
-          href={siteMetadata.github}
-          className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border"
-          aria-label="Check my profile on Github"
-          target="_blank"
-        >
-          <GithubIcon className="w-[30px] h-[30px]  fill-current text-dark dark:text-light" />
+        <a href={siteMetadata.github} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Check my profile on Github" target="_blank">
+          <GithubIcon className="w-6 h-6  fill-current text-dark dark:text-light" />
         </a>
       </div>
 
