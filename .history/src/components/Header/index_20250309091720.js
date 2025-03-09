@@ -38,7 +38,9 @@ const Header = () => {
 
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
-
+      <style jsx global>
+        {styles}
+      </style>
 
       <Logo className="logo" /> {/* Áp dụng lớp logo cho thành phần Logo */}
 
