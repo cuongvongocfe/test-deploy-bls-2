@@ -159,7 +159,7 @@ const Header = () => {
       {/* Social Icons */}
       <div className="hidden sm:flex items-center justify-center space-x-4 p-2">
         <a href={siteMetadata.linkedin} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via LinkedIn" target="_blank">
-          <LinkedinIcon className="w-6 h-6 fill-current text-dark dark:text-light" />
+          <LinkedinIcon className="w-6.5 h-6.5 fill-current text-dark dark:text-light" />
         </a>
         <a href={siteMetadata.twitter} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Twitter" target="_blank">
           <TwitterIcon className="w-6 h-6 fill-current text-dark dark:text-light" />

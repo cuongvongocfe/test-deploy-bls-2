@@ -1,24 +1,28 @@
 "use client";
 import Link from "next/link";
 import Logo from "./Logo";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../Icons";
+import { MoonIcon, SunIcon } from "../Icons"; // Removed unused icons
+// Assuming you have these new icons available in your Icons file
+import { FacebookIcon, ZaloIcon, TiktokIcon } from "../Icons"; 
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
 import Image from "next/image";
 
-// CSS tùy chỉnh cho animation viền
+// CSS styles (same as before, with minor adjustments for the social icons)
 const styles = `
   .animated-border {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
+    background: #ff5e62; /* Pink background like in the image */
+    border-radius: 50%;
   }
   .animated-border::before {
     content: '';
     position: absolute;
-    top: -5px; /* Giữ background như hiện tại */
+    top: -5px;
     left: -5px;
     right: -5px;
     bottom: -5px;
@@ -55,7 +59,7 @@ const Header = () => {
   const toggle = () => setClick(!click);
   const toggleImages = () => setShowImages(!showImages);
 
-  const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
+  const navClass = "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300";
   const linkClass = "mx-2 my-2";
   const themeButtonClass = cx(
     "w-8 h-8 ease ml-2 flex items-center justify-center rounded-full p-1",
@@ -67,7 +71,7 @@ const Header = () => {
   );
 
   return (
-    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between relative">
       <style jsx global>{styles}</style>
 
       <Logo />
@@ -136,37 +140,40 @@ const Header = () => {
         </button>
       </nav>
 
-      {/* Desktop Navigation */}
-      <nav className={`${navClass} hidden sm:flex`}>
-        <Link href="/about" className={linkClass}>Giới Thiệu</Link>
-        <Link href="/contact" className={linkClass}>Liên Hệ</Link>
-        <button
-          onClick={toggleImages}
-          className={imageButtonClass}
-          aria-label="Show ISO certificates"
-        >
-          Chứng Chỉ ISO
-        </button>
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={themeButtonClass}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? <MoonIcon className="fill-dark" /> : <SunIcon className="fill-dark" />}
-        </button>
-      </nav>
+      {/* Desktop Navigation Container */}
+      <div className="hidden sm:flex items-center space-x-4 absolute top-6 right-10">
+        {/* Navigation */}
+        <nav className={`${navClass}`}>
+          <Link href="/about" className={linkClass}>Giới Thiệu</Link>
+          <Link href="/contact" className={linkClass}>Liên Hệ</Link>
+          <button
+            onClick={toggleImages}
+            className={imageButtonClass}
+            aria-label="Show ISO certificates"
+          >
+            Chứng Chỉ ISO
+          </button>
+          <button
+            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            className={themeButtonClass}
+            aria-label="theme-switcher"
+          >
+            {mode === "light" ? <MoonIcon className="fill-dark" /> : <SunIcon className="fill-dark" />}
+          </button>
+        </nav>
 
-      {/* Social Icons */}
-      <div className="hidden sm:flex items-center justify-center space-x-4 p-2">
-        <a href={siteMetadata.linkedin} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via LinkedIn" target="_blank">
-          <LinkedinIcon className="w-6 h-6 fill-current text-dark dark:text-light" />
-        </a>
-        <a href={siteMetadata.twitter} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Twitter" target="_blank">
-          <TwitterIcon className="w-6 h-6 fill-current text-dark dark:text-light" />
-        </a>
-        <a href={siteMetadata.github} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Check my profile on Github" target="_blank">
-          <GithubIcon className="w-6 h-6  fill-current text-dark dark:text-light" />
-        </a>
+        {/* Social Icons */}
+        <div className="flex items-center justify-center space-x-4">
+          <a href={siteMetadata.facebook} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Facebook" target="_blank">
+            <FacebookIcon className="w-[30px] h-[30px] fill-current text-white" />
+          </a>
+          <a href={siteMetadata.zalo} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Reach out to me via Zalo" target="_blank">
+            <ZaloIcon className="w-[30px] h-[30px] fill-current text-white" />
+          </a>
+          <a href={siteMetadata.tiktok} className="w-[50px] h-[50px] flex items-center justify-center rounded-full hover:scale-125 transition-all ease duration-200 animated-border" aria-label="Check my profile on TikTok" target="_blank">
+            <TiktokIcon className="w-[30px] h-[30px] fill-current text-white" />
+          </a>
+        </div>
       </div>
 
       {/* Modal hiển thị ảnh */}
