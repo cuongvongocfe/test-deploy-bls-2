@@ -53,18 +53,8 @@ const Footer = () => {
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 640, settings: { slidesToShow: 2 } },
     ],
   };
 
@@ -81,7 +71,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
-            {Partners.map((partner, index) => (
+            {Partners && Partners.map((partner, index) => (
               <div key={index} className="px-4 flex items-center justify-center h-[200px]">
                 <Image
                   src={partner}
@@ -186,16 +176,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Google Maps Iframe với responsive */}
           <div className="w-full max-w-md mx-auto md:max-w-xs lg:max-w-sm">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgVHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmc bmhoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
-              width="100%" // Sử dụng width 100% để responsive
-              height="300" // Giữ chiều cao cố định hoặc dùng class Tailwind
-              style={{ border: 0 }}
+              width="100%"
+              height="300"
               allowFullScreen=""
               loading="lazy"
-              className="w-full h-64 sm:h-72 md:h-80 rounded-lg" // Responsive height
+              className="w-full h-64 sm:h-72 md:h-80 rounded-lg border-0"
             />
           </div>
         </div>
