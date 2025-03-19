@@ -173,17 +173,11 @@ const Header = () => {
 
       {/* Modal hiển thị ảnh */}
       {showImages && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-auto"
-          onClick={toggleImages} // Thêm sự kiện nhấp để đóng modal
-        >
-          <div
-            className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-6xl w-full relative max-h-screen overflow-y-auto"
-            onClick={(e) => e.stopPropagation()} // Ngăn chặn sự kiện lan truyền
-          >
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-y-auto">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-6xl w-full relative max-h-screen overflow-y-auto">
             <button
               onClick={toggleImages}
-              className="absolute top-0 right-0 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-3xl w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:animate-spin-infinite font-bold"
+              className="absolute top-4 right-4 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-4xl w-12 h-12 flex items-center justify-center rounded-full transition-transform duration-300 hover:animate-spin-infinite"
               aria-label="Close modal"
             >
               ✕
@@ -207,21 +201,6 @@ const Header = () => {
           </div>
         </div>
       )}
-
-      {/* Thêm CSS cho animation */}
-      <style jsx>{`
-        @keyframes spin {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        .animate-spin-infinite:hover {
-          animation: spin 2s linear infinite;
-        }
-      `}</style>
     </header>
   );
 };

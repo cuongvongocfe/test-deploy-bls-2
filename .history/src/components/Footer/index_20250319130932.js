@@ -99,7 +99,7 @@ const Footer = () => {
   return (
     <footer
       className="mt-16 rounded-2xl m-2 sm:m-10 flex flex-col items-center relative"
-      style={{ backgroundColor: "#F7C566" }} // Nền footer: Vàng cam nhạt
+      style={{ backgroundColor: "#1b1b1b" }} // dark: Xám đen đậm
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3
@@ -132,8 +132,8 @@ const Footer = () => {
               key={item}
               className="font-semibold text-base xs:text-lg sm:text-xl md:text-2xl py-3 px-6 rounded hover:scale-105 transition-all duration-200 cursor-pointer"
               style={{
-                backgroundColor: "#1b1b1b", // dark: Xám đen đậm
-                color: "#fff", // light: Trắng
+                backgroundColor: "#F7C566", // accentDark: Vàng cam nhạt
+                color: "#1b1b1b", // dark: Xám đen đậm
                 border: "2px solid #7B00D3", // accent: Tím đậm
               }}
             >
@@ -146,32 +146,32 @@ const Footer = () => {
           className="mt-8 md:mt-12 py-6 flex flex-col md:flex-row justify-between gap-8"
           style={{ borderTop: `1px solid #747474` }} // gray: Xám trung tính
         >
-          <div className="space-y-1 flex-1"> {/* Giảm khoảng cách giữa các dòng */}
+          <div className="space-y-3 flex-1">
             <h3
               className="text-2xl font-semibold"
-              style={{ color: "#000000" }} // Màu đen
+              style={{ color: "#fff" }} // light: Trắng
             >
               Liên Hệ
             </h3>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <a
                 href="tel:+84876789252"
-                className="flex items-center text-xl font-medium transition-colors duration-200 hover:underline" // Tăng kích thước chữ
-                style={{ color: "#7B00D3" }} // Giữ màu tím đậm cho số điện thoại
+                className="flex items-center text-lg font-medium transition-colors duration-200 hover:underline"
+                style={{ color: "#7B00D3" }} // accent: Tím đậm
               >
                 <span className="mr-2">📞</span> (+84) 87.6789.252
               </a>
               <a
                 href="mailto:info@baolongscrap.vn"
-                className="flex items-center text-xl font-medium transition-colors duration-200 hover:underline" // Tăng kích thước chữ
-                style={{ color: "#000000" }} // Màu đen
+                className="flex items-center text-lg font-medium transition-colors duration-200 hover:underline"
+                style={{ color: "#fff" }} // light: Trắng
               >
                 <span className="mr-2">📧</span> info@baolongscrap.vn
               </a>
               <a
                 onClick={toggleInfoModal}
-                className="flex items-center text-xl font-medium cursor-pointer transition-colors duration-200 hover:underline" // Tăng kích thước chữ
-                style={{ color: "#000000" }} // Màu đen
+                className="flex items-center text-lg font-medium cursor-pointer transition-colors duration-200 hover:underline"
+                style={{ color: "#fff" }} // light: Trắng
               >
                 <span className="mr-2">📜</span> Mã Số Thuế: 1702260628
               </a>
@@ -179,19 +179,19 @@ const Footer = () => {
                 href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-+Tv+X%E1%BB%83+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-xl font-medium transition-colors duration-200 hover:underline" // Tăng kích thước chữ
-                style={{ color: "#000000" }} // Màu đen
+                className="flex items-center text-lg font-medium transition-colors duration-200 hover:underline"
+                style={{ color: "#fff" }} // light: Trắng
               >
                 <span className="mr-2">📍</span> A17-36A Đường Số 02, Khu Nam An Hòa, Phường An Hòa, Thành Phố Rạch Giá, Tỉnh Kiên Giang
               </a>
             </div>
           </div>
 
-          <div className="space-y-1 flex-1"> {/* Giảm khoảng cách giữa các dòng */}
+          <div className="space-y-3 flex-1">
             <h3
               className="text-2xl font-semibold cursor-pointer transition-colors duration-200"
               onClick={() => setIsServicesOpen(!isServicesOpen)}
-              style={{ color: "#000000" }} // Màu đen
+              style={{ color: "#fff" }} // light: Trắng
             >
               Dịch Vụ
               <span className="ml-1 text-sm inline-block transition-transform duration-200">
@@ -201,8 +201,8 @@ const Footer = () => {
 
             <div
               className={`transition-all duration-300 overflow-hidden ${
-                isServicesOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
-              }`} // Tăng chiều cao tối đa
+                isServicesOpen ? "max-h-[250px] opacity-100" : "max-h-0 opacity-0"
+              }`}
             >
               <input
                 type="text"
@@ -217,13 +217,13 @@ const Footer = () => {
                 }}
               />
               <div
-                className="max-h-[250px] overflow-y-auto pr-2 scrollbar-thin"
+                className="max-h-[200px] overflow-y-auto pr-2 scrollbar-thin"
                 style={{
                   scrollbarThumb: "#7B00D3", // accent: Tím đậm
                   scrollbarTrack: "#747474", // gray: Xám trung tính
                 }}
               >
-                <ul className="space-y-1"> {/* Giảm khoảng cách giữa các mục dịch vụ */}
+                <ul className="space-y-2">
                   {filteredServices.length > 0 ? (
                     filteredServices.map((service) => (
                       <li
@@ -232,8 +232,8 @@ const Footer = () => {
                       >
                         <a
                           href="/"
-                          className="block text-xl font-medium transition-colors duration-200 hover:underline" // Tăng kích thước chữ
-                          style={{ color: "#000000" }} // Màu đen
+                          className="block text-lg font-medium transition-colors duration-200 hover:underline"
+                          style={{ color: "#fff" }} // light: Trắng
                         >
                           {service}
                         </a>
@@ -241,8 +241,8 @@ const Footer = () => {
                     ))
                   ) : (
                     <li
-                      className="text-xl font-medium" // Tăng kích thước chữ
-                      style={{ color: "#000000" }} // Màu đen
+                      className="text-lg font-medium"
+                      style={{ color: "#747474" }} // gray: Xám trung tính
                     >
                       Không tìm thấy dịch vụ
                     </li>
@@ -257,7 +257,7 @@ const Footer = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgTHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmc bmhoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
               width="100%"
               height="300"
-              style={{ border: `2px solid #7B00D3` }} // accent: Tím đậm
+              style={{ border: `2px solid #F7C566` }} // accentDark: Vàng cam nhạt
               allowFullScreen=""
               loading="lazy"
               className="w-full h-64 sm:h-72 md:h-80 rounded-lg"
@@ -332,7 +332,7 @@ const Footer = () => {
         )}
 
         <div
-          className="py-4 text-center text-xl" // Tăng kích thước chữ từ text-sm lên text-xl
+          className="py-4 text-center text-sm"
           style={{ borderTop: `1px solid #747474`, color: "#fff" }} // light: Trắng
         >
           © {new Date().getFullYear()} Bảo Long Scrap. All rights reserved.

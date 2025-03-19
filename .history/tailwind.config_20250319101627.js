@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        light: "#fff",
-        accent: "#7B00D3",
-        accentDark: "#F7C566",
-        gray: "#747474",
+        dark: "#0D1117", // Đen đậm
+        light: "#F9FAFB", // Trắng ngà nhẹ
+        accent: "#6D28D9", // Tím đậm
+        accentDark: "#F59E0B", // Vàng cam đậm
+        gray: "#6B7280", // Xám trung tính
       },
       fontFamily: {
         mr: ["var(--font-mr)"],
