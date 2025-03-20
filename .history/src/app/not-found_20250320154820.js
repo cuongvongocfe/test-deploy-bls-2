@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { FaExclamationTriangle } from "react-icons/fa"; // Import icon từ react-icons
+import { FaExclamationTriangle } from "react-icons/fa";
 
-// Định nghĩa các biến chứa className để tái sử dụng và dễ bảo trì
 const TEXT_CLASSES = "text-dark dark:text-light font-bold capitalize text-center";
 const TITLE_CLASSES = `${TEXT_CLASSES} text-6xl sm:text-7xl xl:text-8xl`;
 const SUBTITLE_CLASSES = `${TEXT_CLASSES} text-4xl sm:text-5xl xl:text-6xl mt-4 tracking-wide leading-snug`;
@@ -13,7 +12,7 @@ const NotFound = () => {
     // Phần chính của trang 404, căn giữa nội dung và thêm margin trên/dưới
     <main className="my-32 w-full dark:bg-dark flex justify-center font-mr">
       <div className="relative flex flex-col items-center justify-center">
-        {/* Icon minh họa lỗi, màu đỏ để nổi bật */}
+        {/* Icon minh họa lỗi */}
         <FaExclamationTriangle className="text-5xl sm:text-6xl text-red-500 dark:text-red-400 mb-4" />
 
         {/* Tiêu đề "404" với kích thước lớn, responsive trên các màn hình */}

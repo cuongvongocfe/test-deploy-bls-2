@@ -31,11 +31,14 @@ const AboutCoverSection = () => {
       <div
         className={`${BASE_CLASSES} w-full md:w-1/2 flex flex-col items-start justify-center p-4 sm:p-6 md:p-8 lg:p-12 text-wrap`}
       >
-        <h2 className="font-bold capitalize text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center md:text-left leading-tight mb-4 text-[#7B00D3] dark:text-yellow-300">
+        <h2 className="font-bold capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-left leading-tight mb-4">
           “Act locally, impact globally”
         </h2>
         <p className="font-medium text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
-          Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi tích cực to lớn. Mỗi hành động cụ thể, mỗi kilôgam phế liệu được tái chế, mỗi tấn chất thải được xử lý an toàn đều giảm thiểu tác động tiêu cực đến môi trường, hạn chế ô nhiễm, tiết kiệm cũng như tái chế tài nguyên. Chúng ta không cần phải chờ đợi những giải pháp lớn lao từ bên ngoài, mà có thể bắt đầu từ chính những gì trong tầm tay. Ngay cả những hành động nhỏ nhất, khi được thực hiện với sự cam kết và ý thức, đều góp phần bảo vệ môi trường, xây dựng một tương lai bền vững, và lan tỏa thông điệp mạnh mẽ về trách nhiệm với nơi chúng ta sống.
+           Mọi hành động nhỏ bé tại địa phương đều có thể tạo nên sự thay đổi tích cực to lớn. Mỗi hành động cụ thể, mỗi kilôgam phế liệu được tái chế, mỗi tấn chất thải được xử lý an toàn đều giảm thiểu tác động tiêu cực đến môi trường, hạn chế ô nhiễm, tiết kiệm cũng như tái chế tài nguyên. Chúng ta không cần phải chờ đợi những giải pháp lớn lao từ bên ngoài, mà có thể bắt đầu từ chính những gì trong tầm tay. Ngay cả những hành động nhỏ nhất, khi được thực hiện với sự cam kết và ý thức, đều góp phần bảo vệ môi trường, xây dựng một tương lai bền vững, và lan tỏa thông điệp mạnh mẽ về trách nhiệm với nơi chúng ta sống.
+          <br />
+          <br />
+      
         </p>
       </div>
     </section>
