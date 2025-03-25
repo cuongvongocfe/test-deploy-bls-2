@@ -84,7 +84,7 @@ export default function BlogPage({ params }) {
     "author": [{
         "@type": "Person",
         "name": blog?.author ? [blog.author] : siteMetadata.author,
-        "url": siteMetadata.twitter,
+        "url": siteMetadata.siteUrl + blog.url,
       }]
   }
 
@@ -130,7 +130,7 @@ export default function BlogPage({ params }) {
             open
           >
             <summary className="text-lg font-semibold capitalize cursor-pointer">
-              Table Of Content
+              Mục lục
             </summary>
             <ul className="mt-4 font-in text-base">
               {blog.toc.map((heading) => {
