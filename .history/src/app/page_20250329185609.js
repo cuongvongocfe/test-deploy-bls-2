@@ -3,7 +3,7 @@ import HomeCoverSection from "../components/Home/HomeCoverSection";
 import FeaturedPosts from "../components/Home/FeaturedPosts";
 import RecentPosts from "../components/Home/RecentPosts";
 import Script from 'next/script'; // Sử dụng next/script thay vì next/head
-import businessData from '../data/businessData.json'; // Import dữ liệu JSON-LD
+import businessData from '../src/data/businessData.json'; // Import dữ liệu JSON-LD
 
 export default function Home() {
   return (
