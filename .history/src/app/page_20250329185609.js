@@ -2,8 +2,8 @@ import { allBlogs } from "contentlayer/generated";
 import HomeCoverSection from "../components/Home/HomeCoverSection";
 import FeaturedPosts from "../components/Home/FeaturedPosts";
 import RecentPosts from "../components/Home/RecentPosts";
-import Script from 'next/script'; // use next/script
-import businessData from '../data/businessData.json'; // Import data JSON-LD
+import Script from 'next/script'; // Sử dụng next/script thay vì next/head
+import businessData from '../src/data/businessData.json'; // Import dữ liệu JSON-LD
 
 export default function Home() {
   return (

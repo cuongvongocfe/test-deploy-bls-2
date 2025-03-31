@@ -1,0 +1,49 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bảo Long Scrap",
+    "image": "https://baolongscrap.vn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-img.ef981a63.png&w=384&q=75",
+    "telephone": "+84876789252",
+    "email": "info@baolongscrap.vn",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "A17-36A Đường số 02, Khu Nam An Hòa, Phường An Hòa",
+      "addressLocality": "Thành phố Rạch Giá",
+      "addressRegion": "Tỉnh Kiên Giang",
+      "postalCode": "920000",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.9787181,
+      "longitude": 105.1032723
+    },
+    "url": "https://baolongscrap.vn/",
+    "description": "Công ty chuyên xử lý chất thải nguy hại y tế và công nghiệp, tiêu hủy hồ sơ dạng giấy, thu mua phá dỡ xác nhà và công trình xây dựng, thu mua phế liệu và hàng thanh lý. Mã số thuế đăng ký kinh doanh: 1702260628",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/baolongscrap",
+      "https://www.tiktok.com/@baolongscrap.vn",
+      "https://www.pinterest.com/baolongscrapvn",
+      "https://www.threads.net/@_baolongscrap_",
+      "https://x.com/BaoLongScrap",
+      "https://baolongscrap.blogspot.com/",
+      "https://www.plurk.com/BaoLongScrap",
+      "https://www.tumblr.com/baolongscrap/"
+    ]
+  }
