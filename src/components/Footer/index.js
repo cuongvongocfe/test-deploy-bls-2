@@ -53,7 +53,6 @@ const companyInfo = {
 
 const Footer = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   const toggleInfoModal = () => setShowInfoModal(!showInfoModal);
@@ -74,10 +73,6 @@ const Footer = () => {
       { breakpoint: 360, settings: { slidesToShow: 1, dots: false } },
     ],
   };
-
-  const filteredServices = Services.filter((service) =>
-    service.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   return (
     <footer className="mt-16 rounded-2xl m-2 sm:m-4 md:m-8 lg:m-10 flex flex-col items-center relative bg-[#F7C566] min-h-[50vh]">
@@ -108,111 +103,88 @@ const Footer = () => {
           {SkillList.map((item) => (
             <li
               key={item}
-              className="font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl py-2 sm:py-3 px-4 sm:px-6 rounded hover:scale-105 transition-all duration-200 cursor-pointer bg-[#1b1b1b] text-white border-2 border-[#7B00D3]"
+              className="font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl py-2 sm:py-3 px-4 sm:px-6 rounded hover:scale-105 transition-all duration-200 cursor-pointer bg-[#1b1b1b] text-white border-2 border-[#000000]"
             >
               {item}
             </li>
           ))}
         </ul>
 
-        <div className="mt-8 md:mt-12 py-6 flex flex-col md:flex-row justify-between gap-4 border-t border-[#747474]">
-          <div className="space-y-0.5 flex-1">
-            <h3 className="text-xl sm:text-2xl font-semibold text-black">Liên Hệ</h3>
-            <div className="space-y-0.5">
+        <div className="mt-6 md:mt-8 py-4 flex flex-col md:flex-row justify-between gap-3 border-t border-[#747474]">
+          {/* Phần Liên Hệ */}
+          <div className="space-y-2 flex-1 bg-white border border-[#000000] rounded-xl p-4">
+            <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7B00D3] to-[#F7C566]">Liên Hệ</h3>
+            <div className="flex flex-col space-y-1">
               <a
                 href="tel:+84876789252"
-                className="flex items-center text-lg sm:text-xl md:text-2xl font-medium transition-colors duration-200 hover:underline text-[#7B00D3]"
+                className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]"
                 aria-label="Gọi số (+84) 87.6789.252"
               >
-                <span className="mr-2">📞</span> (+84) 87.6789.252
+                (+84) 87.6789.252
               </a>
               <a
                 href="mailto:info@baolongscrap.vn"
-                className="flex items-center text-lg sm:text-xl md:text-2xl font-medium transition-colors duration-200 hover:underline text-black"
+                className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]"
                 aria-label="Gửi email đến info@baolongscrap.vn"
               >
-                <span className="mr-2">📧</span> info@baolongscrap.vn
+                info@baolongscrap.vn
               </a>
               <button
                 onClick={toggleInfoModal}
-                className="flex items-center text-lg sm:text-xl md:text-2xl font-medium transition-colors duration-200 hover:underline text-black"
+                className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]"
                 aria-label="Xem thông tin công ty"
               >
-                <span className="mr-2">📜</span> Mã Số Thuế: 1702260628
+                Thông tin công ty
               </button>
-              <a
-                href="https://www.google.com/maps/place/C%C3%B4ng+Ty+TNHH+B%E1%BA%A3o+Long+Scrap+-+Ph%E1%BA%BF+Li%E1%BB%87u+-+Tv+X%E1%BB%83+l%C3%BD+r%C3%A1c+th%E1%BA%A3i+y+t%E1%BA%BF+-+Nguy+h%E1%BA%A1i+-+C%C3%B4ng+nghi%E1%BB%87p/@9.9786998,105.1006974,17z"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-lg sm:text-xl md:text-2xl font-medium transition-colors duration-200 hover:underline text-black"
-                aria-label="Xem bản đồ địa chỉ công ty"
-              >
-                <span className="mr-2">📍</span> A17-36A Đường Số 02, Khu Nam An Hòa, Phường An Hòa, Thành Phố Rạch Giá, Tỉnh Kiên Giang
-              </a>
             </div>
           </div>
 
-          <div className="space-y-0.5 flex-1">
+          {/* Phần Dịch Vụ */}
+          <div className="space-y-2 flex-1 bg-white border border-[#000000] rounded-xl p-4">
             <h3
-              className="text-xl sm:text-2xl font-semibold cursor-pointer transition-colors duration-200 text-black"
+              className="text-lg sm:text-xl font-bold cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-[#7B00D3] to-[#F7C566] flex items-center hover:text-gray-600"
               onClick={() => setIsServicesOpen(!isServicesOpen)}
               aria-expanded={isServicesOpen}
               aria-controls="services-list"
             >
               Dịch Vụ
-              <span className="ml-1 text-sm inline-block transition-transform duration-200">
-                {isServicesOpen ? "▲" : "▼"}
+              <span className="ml-2 text-sm inline-block transition-transform duration-200 transform">
+                {isServicesOpen ? "↑" : "↓"}
               </span>
             </h3>
 
             <div
-              className={`transition-all duration-300 overflow-hidden ${
-                isServicesOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+              className={`transition-all duration-300 overflow-hidden ease-in-out ${
+                isServicesOpen ? "max-h-[150px] opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-2"
               }`}
               id="services-list"
             >
-              <input
-                type="text"
-                placeholder="Tìm kiếm dịch vụ..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-2 mb-3 rounded-lg border focus:outline-none transition-all duration-200 bg-white text-[#1b1b1b] border-[#747474]"
-                aria-label="Tìm kiếm dịch vụ"
-              />
-              <div className="max-h-[350px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#7B00D3] scrollbar-track-[#747474]">
-                <ul className="space-y-0.5">
-                  {filteredServices.length > 0 ? (
-                    filteredServices.map((service) => (
-                      <li
-                        key={service}
-                        className="transform transition-all duration-200 hover:translate-x-2"
+              <div className="max-h-[150px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#7B00D3] scrollbar-track-[#747474] bg-white border border-[#000000] rounded-lg p-2">
+                <ul className="space-y-1">
+                  {Services.map((service) => (
+                    <li key={service}>
+                      <a
+                        href="/"
+                        className="block text-base sm:text-lg font-medium text-gray-800"
                       >
-                        <a
-                          href="/"
-                          className="block text-lg sm:text-xl md:text-2xl font-medium transition-colors duration-200 hover:underline text-black"
-                        >
-                          {service}
-                        </a>
-                      </li>
-                    ))
-                  ) : (
-                    <li className="text-lg sm:text-xl md:text-2xl font-medium text-black">
-                      Không tìm thấy dịch vụ
+                        {service}
+                      </a>
                     </li>
-                  )}
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
 
+          {/* Phần bản đồ */}
           <div className="w-full max-w-md mx-auto md:max-w-xs lg:max-w-sm flex-1">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgTHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmc bmhoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgTHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgTmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
               width="100%"
               height="300"
               allowFullScreen=""
               loading="lazy"
-              className="w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg border-2 border-[#7B00D3]"
+              className="w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg border-2 border-[#000000]"
               title="Bản đồ công ty Bảo Long Scrap"
             />
           </div>
