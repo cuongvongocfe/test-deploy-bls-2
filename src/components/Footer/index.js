@@ -129,6 +129,9 @@ const Footer = () => {
               >
                 info@baolongscrap.vn
               </a>
+              <p className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]">
+                A17-36A đường số 02, khu Nam An Hoà, phường An Hoà, thành phố Rạch Giá, tỉnh Kiên Giang.
+              </p>
               <button
                 onClick={toggleInfoModal}
                 className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]"
@@ -154,8 +157,8 @@ const Footer = () => {
             </h3>
 
             <div
-              className={`transition-all duration-300 overflow-hidden ease-in-out ${
-                isServicesOpen ? "max-h-[150px] opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-2"
+              className={`transition-all duration-300 overflow-hidden ease-in-out will-change-max-height will-change-opacity ${
+                isServicesOpen ? "max-h-[150px] opacity-100" : "max-h-0 opacity-0"
               }`}
               id="services-list"
             >
@@ -179,7 +182,7 @@ const Footer = () => {
           {/* Phần bản đồ */}
           <div className="w-full max-w-md mx-auto md:max-w-xs lg:max-w-sm flex-1">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgTHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC1UdiBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgTmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.3653267542196!2d105.10262856962211!3d9.978699799382852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b554b75f0c41%3A0xbd4d768eeec11fb3!2zQ8O0bmcgTHkgVE5ISCBC4bqjbyBMb25nIFNjcmFwIC0gUGjhur8gTGnhu4d1IC0gTvBY4butIGzDvSByw6FjIHRh4bqjaSB5IHThur8gLSBOZ3V5IGjhuqFpIC0gQ8O0bmcgTmdoaeG7h3A!5e0!3m2!1svi!2s!4v1708390865079!5m2!1svi!2s"
               width="100%"
               height="300"
               allowFullScreen=""
