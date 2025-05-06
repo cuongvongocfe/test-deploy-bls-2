@@ -69,7 +69,7 @@ const staticUrls = [
 
 module.exports = {
   siteUrl: siteMetadata.siteUrl,
-  generateRobotsTxt: true,
+  generateRobotsTxt: false, // Prevent overwriting robots.txt
   // Exclude all automatic routes to prevent generating sitemap-0.xml
   exclude: ["**/*"],
   // Customize the sitemap output
@@ -94,4 +94,8 @@ module.exports = {
       priority: url.priority,
     }));
   },
+  // Explicitly set the sitemap file name
+  sitemapBaseFileName: "sitemap",
+  // Disable generating additional sitemap files
+  generateIndexSitemap: false
 };
