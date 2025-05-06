@@ -1,6 +1,13 @@
 # *
 User-agent: *
-Allow: /
+Disallow: /web-development
+Disallow: /tieu-huy-giay-1
+Disallow: /tieu-huy-giay-3
+Disallow: /tieu-huy-giay-11
+Disallow: /tieu-huy-giay-14
+Disallow: /phadocongtrinh
+Disallow: /tin-tuc-1
+Disallow: /xulychatthai
 
 # Host
 Host: https://baolongscrap.vn
