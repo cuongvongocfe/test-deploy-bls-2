@@ -1,35 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://baolongscrap.vn/apple-icon.png</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/manifest.webmanifest</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/about</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/hotel-anhdao</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/pha-do-cong-trinh</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep-vietnam</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep-vo-trau</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/phu-pham-xo-dua</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/quy-trinh-xu-ly-chat-thai-nguy-hai</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/rac-thai-nhua</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/su-dung-giay-tai-che-dong-nghia-voi-viec-giam-luong-go-phai-chat-ha</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/thu-hoi-pin-cu</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/thu-mua-tai-san-thanh-ly-tai-san-ngan-hang</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/tieu-huy-ho-so-tai-lieu-mat</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/blogs/xu-ly-chat-thai-thuy-tinh-thong-thuong</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/all</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/phadocongtrinh</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/pha-do-cong-trinh</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tin-tuc</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tin-tuc-1</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tin-tuc-2</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tin-tuc-3</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/xu-ly-chat-thai-nguy-hai</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tin-tuc-4</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tai-che-giay</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/thu-hoi-pin-cu</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/thu-mua-tai-san</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/tieu-huy-giay</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/categories/chat-thai-thuy-tinh</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://baolongscrap.vn/contact</loc><lastmod>2024-05-14T00:38:20.990Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://baolongscrap.vn/</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/about</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/contact</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/tieu-huy-giay</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/danh-sach-tai-lieu-can-luu-giu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/dich-vu-tieu-huy-tai-lieu-dinh-ky-cho-cac-truong-dai-hoc-cao-dang</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/huong-dan-sap-xep-ho-so-tai-lieu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/loi-ich-kinh-te-cua-viec-tieu-huy-tai-lieu-dinh-ky</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/all</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/meo-luu-tru-va-sap-xep-phan-loai-tai-lieu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/nguy-co-tiem-an-khi-khong-huy-bo-tai-lieu-da-het-han-su-dung</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/nhung-tieu-chi-quan-trong-khi-chon-dich-vu-tieu-huy-tai-lieu-cho-truong-hoc</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/6-danh-muc-tai-lieu-quan-trong-can-co-trong-moi-doanh-nghiep</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/bao-long-scrap-tuyen-dung</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/bi-quyet-giup-doanh-nghiep-quan-ly-tai-lieu-hieu-qua-va-khoa-hoc</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/chat-thai-thuy-tinh</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/pha-do-cong-trinh</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/tai-che-giay</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/thu-hoi-pin-cu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/thu-mua-tai-san</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/tieu-huy</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/tieu-huy-thuoc-duoc-pham-het-han</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/tin-tuc</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/categories/xu-ly-chat-thai-nguy-hai</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/bao-mat-thong-tin-khi-tieu-huy-tai-lieu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/bi-quyet-chon-dich-vu-tieu-huy-tai-lieu-bao-mat-cho-ca-nhan</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/bi-quyet-tim-kiem-cong-ty-tieu-huy-tai-lieu-ho-so-chuyen-nghiep</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cac-buoc-can-thiet-trong-quy-trinh-tieu-huy-tai-lieu-bao-mat</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cac-buoc-huy-tai-lieu-giay-to-ho-so-het-han-luu-tru</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cac-cach-huy-tai-lieu-nhanh-chong-va-hieu-qua</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cac-loi-ich-khong-ngo-toi-tu-dich-vu-tieu-huy-tai-lieu-bao-mat</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cong-ty-tieu-huy-ho-so-giay-tai-kien-giang-uy-tin-an-toan-va-hieu-qua</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/cong-ty-tieu-huy-tai-lieu-uy-tin-tai-kien-giang</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/dich-vu-tieu-huy-tai-lieu-chuyen-nghiep-tai-kien-giang-bao-long-scrap</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/gioi-thieu-ve-quy-trinh-tieu-huy-tai-lieu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/huong-dan-quy-trinh-tieu-huy-tai-lieu-nhanh-chong-an-toan</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/huong-dan-tieu-huy-tai-lieu-het-gia-tri-bao-ve-thong-tin-hieu-qua</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/ly-do-ban-nen-tieu-huy-tai-lieu-bao-mat</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/may-tieu-huy-tai-lieu-lua-chon-thong-minh-de-bao-ve-thong-tin</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-dinh-ve-tieu-huy-ho-so-cap-nhat-moi-nhat-huong-dan-thuc-hien</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-dinh-ve-tieu-huy-tai-lieu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-tieu-huy-ho-so-benh-an-het-gia-tri-theo-quy-dinh-bo-y-te</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-tieu-huy-ho-so-tai-lieu-dung-chuan-huong-dan-chi-tiet-tu-a-den-z</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-tieu-huy-ho-so-tai-lieu-nhan-su-dung-cach</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-tieu-huy-ho-so-tai-lieu-tai-chinh-an-toan-va-tuan-thu-phap-luat</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-tieu-huy-tai-lieu-cho-doanh-nghiep</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/tieu-huy-ho-so-tai-lieu-mat</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/tieu-huy-tai-lieu-giay-cong-doan-quan-trong-trong-chuyen-doi-so</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/tieu-huy-tai-lieu-giup-bao-ve-moi-truong</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/hotel-anhdao</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/pha-do-cong-trinh</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep-vietnam</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/phu-pham-nong-nghiep-vo-trau</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/phu-pham-xo-dua</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/quy-trinh-xu-ly-chat-thai-nguy-hai</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/rac-thai-nhua</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/su-dung-giay-tai-che-dong-nghia-voi-viec-giam-luong-go-phai-chat-ha</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/thu-hoi-pin-cu</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/thu-mua-tai-san-thanh-ly-tai-san-ngan-hang</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/tieu-huy-giay-bang-hinh-thuc-dot</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/tieu-huy-thuoc-va-duoc-phPham-het-han</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://baolongscrap.vn/blogs/xu-ly-chat-thai-thuy-tinh-thong-thuong</loc>
+  <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 </urlset>
