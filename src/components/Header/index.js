@@ -14,6 +14,7 @@ import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
 import Image from "next/image";
+import Script from "next/script";
 
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
@@ -41,6 +42,21 @@ const Header = () => {
 
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+      {/* Google Analytics Scripts */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-369M1Q01X2"
+        strategy="afterInteractive"
+        async
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-369M1Q01X2');
+        `}
+      </Script>
+
       <Logo className="logo transition-transform duration-200 hover:scale-110" />
 
       {/* Hamburger Menu */}
