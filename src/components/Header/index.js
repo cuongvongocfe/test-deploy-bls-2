@@ -1,4 +1,3 @@
-```jsx
 "use client";
 import Link from "next/link";
 import Logo from "./Logo";
@@ -15,7 +14,7 @@ import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
 import Image from "next/image";
-import Head from "next/head";
+import Head from "next/head"; // Import Head component
 
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
@@ -38,21 +37,22 @@ const Header = () => {
   );
   const imageButtonClass = cx(
     "py-1 px-3 rounded-full font-medium transition-colors duration-200 mx-1 text-sm",
-    mode === "light" ? "bg-gray-100 text-black специалист" : "bg-gray-800 text-black"
+    mode === "light" ? "bg-gray-100 text-black" : "bg-gray-800 text-black"
   );
 
   return (
     <>
+      {/* Add Google Tag Manager code in Head */}
       <Head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-369M1Q01X2"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E54JLWXSZ5"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-369M1Q01X2');
+              gtag('config', 'G-E54JLWXSZ5');
             `,
           }}
         />
@@ -478,26 +478,9 @@ const Header = () => {
           </div>
         )}
 
-        {/* Thêm CSS cho animation */}
-        <style jsx>{`
-          @keyframes slideIn {
-            from {
-              opacity: 0;
-              transform: translateY(-10px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          .animate-slideIn {
-            animation: slideIn 0.3s ease-out;
-          }
-        `}</style>
       </header>
     </>
   );
 };
 
 export default Header;
-```
