@@ -44,7 +44,7 @@ const Header = () => {
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
       {/* Google Analytics Scripts */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-369M1Q01X2"
+        src="https://www.googletagmanager.com/gtag/js?id=G-E54JLWXSZ5"
         strategy="afterInteractive"
         async
       />
@@ -53,7 +53,7 @@ const Header = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-369M1Q01X2');
+          gtag('config', 'G-E54JLWXSZ5');
         `}
       </Script>
 
