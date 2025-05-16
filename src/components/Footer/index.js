@@ -2,12 +2,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PhoneInfo from "./PhoneInfo";
-import { format } from "date-fns"; // Import date-fns
-import { vi } from "date-fns/locale"; // Import locale tiếng Việt
 
 // Static assets
 import iso27001 from "../../../public/blogs/iso_27001.png";
@@ -42,8 +41,8 @@ const companyInfo = {
   companyName: "CÔNG TY TNHH BẢO LONG SCRAP",
   tradingName: "BLS.COM",
   taxCode: "1702260628",
-  issueDate: "15/08/2022",
-  operationDate: "15/08/2022",
+  issueDate: "2022-08-15",
+  operationDate: "2022-08-15",
   status: "Đang Hoạt Động",
   address: "A17-36A Đường Số 02, Khu Nam An Hòa, Phường An Hòa, Thành Phố Rạch Giá, Kiên Giang",
   representative: "Lê Thanh Duy",
@@ -76,11 +75,25 @@ const Footer = () => {
     ],
   };
 
-  // Sử dụng date-fns để lấy năm hiện tại
-  const currentYear = format(new Date(), "yyyy", { locale: vi });
+  // Sử dụng Moment.js để lấy năm và ngày đầy đủ
+  const currentYear = typeof window !== "undefined" && window.moment ? window.moment().format("YYYY") : new Date().getFullYear();
+  const fullDate = typeof window !== "undefined" && window.moment ? window.moment().locale("vi").format("dddd, DD [tháng] MM, YYYY") : new Date().toLocaleDateString("vi-VN", { weekday: "long", day: "2-digit", month: "2-digit", year: "numeric" });
 
   return (
     <footer className="mt-16 rounded-2xl m-2 sm:m-4 md:m-8 lg:m-10 flex flex-col items-center relative bg-[#F7C566] min-h-[50vh]">
+      {/* Nhúng Moment.js từ giatuidana.com */}
+      <Script
+        src={`https://giatuidana.com/scripts/moment.min.js?t=${Date.now()}`}
+        strategy="lazyOnload"
+        onError={(e) => console.error("Failed to load Moment.js", e)}
+      />
+      {/* Nhúng locale tiếng Việt cho Moment.js */}
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        strategy="lazyOnload"
+        onError={(e) => console.error("Failed to load Moment.js locales", e)}
+      />
+
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="mt-8 font-bold text-center capitalize text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
           "Act locally, impact globally"
@@ -88,7 +101,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-5">
           <Slider {...sliderSettings}>
-            {Partners?.map((partner, index) => (
+            {Partners.map((partner, index) => (
               <div key={index} className="px-2 sm:px-4 flex items-center justify-center h-[150px] sm:h-[200px]">
                 <Image
                   src={partner}
@@ -109,6 +122,11 @@ const Footer = () => {
             <li
               key={item}
               className="font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl py-2 sm:py-3 px-4 sm:px-6 rounded hover:scale-105 transition-all duration-200 cursor-pointer bg-[#1b1b1b] text-white border-2 border-[#000000]"
+              tabIndex={0}
+              role="button"
+              aria-label={`Xem chi tiết ${item}`}
+              onKeyDown={(e) => e.key === "Enter" && console.log(`Clicked ${item}`)}
+              onClick={() => console.log(`Clicked ${item}`)}
             >
               {item}
             </li>
@@ -118,7 +136,9 @@ const Footer = () => {
         <div className="mt-6 md:mt-8 py-4 flex flex-col md:flex-row justify-between gap-3 border-t border-[#747474]">
           {/* Phần Liên Hệ */}
           <div className="space-y-2 flex-1 bg-white border border-[#000000] rounded-xl p-4">
-            <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7B00D3] to-[#F7C566]">Liên Hệ</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7B00D3] to-[#F7C566]">
+              Liên Hệ
+            </h3>
             <div className="flex flex-col space-y-1">
               <a
                 href="tel:+84876789252"
@@ -171,10 +191,7 @@ const Footer = () => {
                 <ul className="space-y-1">
                   {Services.map((service) => (
                     <li key={service}>
-                      <a
-                        href="/"
-                        className="block text-base sm:text-lg font-medium text-gray-800"
-                      >
+                      <a href="/" className="block text-base sm:text-lg font-medium text-gray-800">
                         {service}
                       </a>
                     </li>
@@ -194,6 +211,7 @@ const Footer = () => {
               loading="lazy"
               className="w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg border-2 border-[#000000]"
               title="Bản đồ công ty Bảo Long Scrap"
+              aria-label="Bản đồ vị trí công ty Bảo Long Scrap"
             />
           </div>
         </div>
@@ -208,12 +226,12 @@ const Footer = () => {
             aria-label="Thông tin công ty"
           >
             <div
-              className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg max-w-lg w-full relative overflow-y-auto"
+              className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg max-w-lg w-full relative max-h-[80vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={toggleInfoModal}
-                className="absolute top-0 right-0 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-3xl w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:animate-spin-infinite font-bold bg-transparent"
+                className="absolute top-0 right-0 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-3xl w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-300 hover:rotate-90 font-bold bg-transparent"
                 aria-label="Đóng modal thông tin công ty"
               >
                 ✕
@@ -232,10 +250,24 @@ const Footer = () => {
                   <strong>Số ĐKKD/MST:</strong> 1702260628
                 </p>
                 <p>
-                  <strong>Ngày cấp:</strong> 15/08/2022
+                  <strong>Ngày cấp:</strong>{" "}
+                  {typeof window !== "undefined" && window.moment
+                    ? window.moment(companyInfo.issueDate).locale("vi").format("DD/MM/YYYY")
+                    : new Date(companyInfo.issueDate).toLocaleDateString("vi-VN", {
+                        day: "2-digit",
+                        month: "2-digit",
+                        year: "numeric",
+                      })}
                 </p>
                 <p>
-                  <strong>Ngày hoạt động:</strong> 15/08/2022
+                  <strong>Ngày hoạt động:</strong>{" "}
+                  {typeof window !== "undefined" && window.moment
+                    ? window.moment(companyInfo.operationDate).locale("vi").format("DD/MM/YYYY")
+                    : new Date(companyInfo.operationDate).toLocaleDateString("vi-VN", {
+                        day: "2-digit",
+                        month: "2-digit",
+                        year: "numeric",
+                      })}
                 </p>
                 <p>
                   <strong>Tình trạng:</strong> Đang Hoạt Động
@@ -263,8 +295,8 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="py-4 text-center text-lg sm:text-xl border-t border-[#747474] text-white" aria-live="polite">
-          © {currentYear} Bảo Long Scrap. All rights reserved.
+        <div className="py-4 text-center text-lg sm:text-xl border-t border-[#747474] text-white">
+          © {currentYear} Bảo Long Scrap. All rights reserved. | Cập nhật: {fullDate}
         </div>
       </div>
 
