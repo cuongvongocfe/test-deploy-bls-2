@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PhoneInfo from "./PhoneInfo";
+import { format } from "date-fns"; // Import date-fns
+import { vi } from "date-fns/locale"; // Import locale tiếng Việt
 
 // Static assets
 import iso27001 from "../../../public/blogs/iso_27001.png";
@@ -73,6 +75,9 @@ const Footer = () => {
       { breakpoint: 360, settings: { slidesToShow: 1, dots: false } },
     ],
   };
+
+  // Sử dụng date-fns để lấy năm hiện tại
+  const currentYear = format(new Date(), "yyyy", { locale: vi });
 
   return (
     <footer className="mt-16 rounded-2xl m-2 sm:m-4 md:m-8 lg:m-10 flex flex-col items-center relative bg-[#F7C566] min-h-[50vh]">
@@ -258,8 +263,8 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="py-4 text-center text-lg sm:text-xl border-t border-[#747474] text-white">
-          © {new Date().getFullYear()} Bảo Long Scrap. All rights reserved.
+        <div className="py-4 text-center text-lg sm:text-xl border-t border-[#747474] text-white" aria-live="polite">
+          © {currentYear} Bảo Long Scrap. All rights reserved.
         </div>
       </div>
 
