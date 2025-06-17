@@ -44,7 +44,7 @@ const companyInfo = {
   issueDate: "2022-08-15",
   operationDate: "2022-08-15",
   status: "Đang Hoạt Động",
-  address: "A17-36A Đường Số 02, Khu Nam An Hòa, Phường An Hòa, Thành Phố Rạch Giá, Kiên Giang",
+  address: "A17-36A đường số 02, khu Nam An Hòa, phường Rạch Giá, tỉnh An Giang",
   representative: "Lê Thanh Duy",
   phone: "0876789252",
   email: "thanhduyqdtp@gmail.com",
@@ -155,7 +155,7 @@ const Footer = () => {
                 info@baolongscrap.vn
               </a>
               <p className="block text-base sm:text-lg font-medium text-gray-800 rounded-lg p-2 bg-white border border-[#000000]">
-                A17-36A đường số 02, khu Nam An Hoà, phường An Hoà, thành phố Rạch Giá, tỉnh Kiên Giang.
+                A17-36A đường số 02, khu Nam An Hòa, phường Rạch Giá, tỉnh An Giang.
               </p>
               <button
                 onClick={toggleInfoModal}
@@ -273,7 +273,7 @@ const Footer = () => {
                   <strong>Tình trạng:</strong> Đang Hoạt Động
                 </p>
                 <p>
-                  <strong>Địa chỉ:</strong> A17-36A Đường Số 02, Khu Nam An Hòa, Phường An Hòa, Thành Phố Rạch Giá, Kiên Giang
+                  <strong>Địa chỉ:</strong> A17-36A đường số 02, khu Nam An Hòa, phường Rạch Giá, tỉnh An Giang
                 </p>
                 <p>
                   <strong>Người đại diện:</strong> Lê Thanh Duy
